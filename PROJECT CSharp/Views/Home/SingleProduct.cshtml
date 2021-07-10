@@ -1,0 +1,653 @@
+﻿
+@{
+    ViewBag.Title = "SingleProduct";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!-- Page Banner Section Start -->
+<div class="page-banner-section section">
+    <div class="page-banner-wrap row row-0 d-flex align-items-center ">
+
+        <!-- Page Banner -->
+        <div class="col-lg-4 col-12 order-lg-2 d-flex align-items-center justify-content-center">
+            <div class="page-banner">
+                <h1>Thông Tin Món Ăn</h1>
+                <div class="breadcrumb">
+                    <ul>
+                        <li><a href="Index">TRANG CHỦ</a></li>
+                        <li><a href="#">Thông tin món ăn</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Banner -->
+        <div class="col-lg-4 col-md-6 col-12 order-lg-1">
+            <div class="banner">
+                <a href="#"><img src="~/Assets/images/banner/banner-015.png" alt="Banner"></a>
+            </div>
+        </div>
+
+        <!-- Banner -->
+        <div class="col-lg-4 col-md-6 col-12 order-lg-3">
+            <div class="banner">
+                <a href="#"><img src="~/Assets/images/banner/baner-014.png" alt="Banner"></a>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!-- Page Banner Section End -->
+<!-- Single Product Section Start -->
+<div class="product-section section mt-90 mb-90">
+    <div class="container">
+
+        <div class="row mb-90">
+
+            <div class="col-lg-6 col-12 mb-50">
+
+                <!-- Image -->
+                <div class="single-product-image thumb-right">
+
+                    <div class="tab-content">
+                        <div id="single-image-1" class="tab-pane fade show active big-image-slider">
+                            <div class="big-image"><img src="~/Assets/images/single-product/monAn.jpg" alt="Big Image"><a href="~/Assets/images/single-product/monAn.jpg" class="big-image-popup"><i class="fa fa-search-plus"></i></a></div>
+                            <div class="big-image"><img src="~/Assets/images/single-product/monAn2.jpg" alt="Big Image"><a href="~/Assets/images/single-product/monAn2.jpg" class="big-image-popup"><i class="fa fa-search-plus"></i></a></div>
+                            <div class="big-image"><img src="~/Assets/images/single-product/monAn3.jpg" alt="Big Image"><a href="~/Assets/images/single-product/monAn3.jpg" class="big-image-popup"><i class="fa fa-search-plus"></i></a></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-lg-6 col-12 mb-50">
+
+                <!-- Content -->
+                <div class="single-product-content">
+
+                    <!-- Category & Title -->
+                    <div class="head-content">
+                        <div class="category-title">
+                            <a href="#" class="cat">Đồ ăn trưa</a>
+                            <h5 class="title">Bò sốt vang</h5>
+                        </div>
+                        <h5 class="price">Giá: 100.000VND</h5>
+                    </div>
+
+                    <div class="single-product-description">
+
+                        <div class="ratting">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+
+                        <div class="desc">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <span style="font-weight: bold;">Vận chuyển:</span>
+
+                                    </td>
+                                    <td> <img style="padding-left: 10px;" src="~/Assets\images\icons\feature-van-1.png" /> Miễn phí vận chuyển</td>
+                                </tr>
+                                <tr>
+                                    <td><span style="font-weight: bold;">Tình trạng:</span></td>
+                                    <td> <span style="color: green;font-weight: bold;padding-left: 10px;">Còn bán</span></td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <div class="quantity-colors">
+
+                            <div class="quantity">
+                                <h5 style="font-weight: bold;">Số lượng</h5>
+                                <div class="pro-qty"><input type="text" value="1"></div>
+                            </div>
+
+                        </div>
+
+                        <div class="actions">
+                            <a style="background-color: #f5d730;
+                                                               padding: 10px;
+                                                               border-radius: 25px;">
+                                <i class="ti-shopping-cart"></i>
+                                <input style="background: none; border: none; font-weight: bold;" type="submit" onclick="buy('${o.id}')" value="THÊM VÀO GIỎ" />
+                            </a>
+                        </div>
+
+                        <div class="share">
+
+                            <h5 style="font-weight: bold;">Share: </h5>
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                            <a href="#"><i class="fa fa-google-plus"></i></a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="row">
+
+            <div class="col-lg-10 col-12 ml-auto mr-auto">
+
+                <ul class="single-product-tab-list nav">
+                    <li><a href="#product-description" class="active" data-toggle="tab">Nguyên liệu</a></li>
+                    <li><a href="#product-reviews" data-toggle="tab">đánh giá</a></li>
+                </ul>
+
+                <div class="single-product-tab-content tab-content">
+                    <div class="tab-pane fade show active" id="product-description">
+
+                        <div class="row">
+                            <div class="single-product-description-content col-lg-8 col-12">
+                                <div>
+                                    <h4>Nguyên liệu:</h4>
+                                    <ul style="list-style-type:disc; margin-left: 30px;">
+                                        <li>Thịt bò gân </li>
+                                        <li>Cà chua </li>
+                                        <li>Tương cà </li>
+                                        <li>Rượu vang đỏ </li>
+                                        <li>Lá nguyệt quế </li>
+                                        <li>Khoai tây </li>
+                                        <li>Cà rốt </li>
+                                        <li>Tỏi</li>
+                                        <li>Rau mùi</li>
+
+                                    </ul>
+                                </div>
+
+                                <div style="margin-top: 20px;">
+                                    <h4>Gia Vị:</h4>
+                                    <ul style="list-style-type:disc; margin-left: 30px;">
+                                        <li>Hạt nêm</li>
+                                        <li>Tiêu</li>
+                                        <li>Đường</li>
+                                        <li>Bột nghệ</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="single-product-description-image col-lg-4 col-12">
+                                <img src="~/Assets/images/single-product/monAn3.jpg" alt="description">
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="tab-pane fade" id="product-reviews">
+
+                        <div class="product-ratting-wrap">
+                            <div class="pro-avg-ratting">
+                                <h4>4.5 <span>(Sao)</span></h4>
+                                <span>Dựa trên 9 bài Đánh giá</span>
+                            </div>
+                            <div class="ratting-list">
+                                <div class="sin-list float-left">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <span>(5)</span>
+                                </div>
+                                <div class="sin-list float-left">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-o"></i>
+                                    <span>(3)</span>
+                                </div>
+                                <div class="sin-list float-left">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-o"></i>
+                                    <i class="fa fa-star-o"></i>
+                                    <span>(1)</span>
+                                </div>
+                                <div class="sin-list float-left">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-o"></i>
+                                    <i class="fa fa-star-o"></i>
+                                    <i class="fa fa-star-o"></i>
+                                    <span>(0)</span>
+                                </div>
+                                <div class="sin-list float-left">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-o"></i>
+                                    <i class="fa fa-star-o"></i>
+                                    <i class="fa fa-star-o"></i>
+                                    <i class="fa fa-star-o"></i>
+                                    <span>(0)</span>
+                                </div>
+                            </div>
+                            <div class="rattings-wrapper">
+
+                                <div class="sin-rattings">
+                                    <div class="ratting-author">
+                                        <div style="font-size: 10px">dd/MM/yyyy hh:mm:ss</div>
+                                        <h3>Thao Tran</h3>
+                                        <div class="ratting-star">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <span>(5)</span>
+                                        </div>
+                                    </div>
+                                    <p>Ngon như mẹ nấu, lần thứ 3 ăn món này vẫn chưa thấy ngán</p>
+                                </div>
+
+                                <div class="sin-rattings">
+                                    <div class="ratting-author">
+                                        <div style="font-size: 10px">dd/MM/yyyy hh:mm:ss</div>
+                                        <h3>Tùng Dương</h3>
+                                        <div class="ratting-star">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <span>(5)</span>
+                                        </div>
+                                    </div>
+                                    <p>Ngon như mẹ nấu.....</p>
+                                </div>
+
+                                <div class="sin-rattings">
+                                    <div class="ratting-author">
+                                        <div style="font-size: 10px">dd/MM/yyyy hh:mm:ss</div>
+                                        <h3>Nga Trần</h3>
+                                        <div class="ratting-star">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <span>(5)</span>
+                                        </div>
+                                    </div>
+                                    <p>Thịt mềm, không hề dai. Sẽ giới thiệu cho bạn bè.</p>
+                                </div>
+
+                                <!--paging start-->
+                                <div class="row mt-30">
+                                    <div class="col">
+                                        <ul class="pagination">
+                                            <li class="page-item ">
+                                                <a>
+                                                    <i class="fa fa-angle-left"></i>Back
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">1</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">2</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">3</a>
+                                            </li>
+                                            <li class="page-item ">
+                                                <a href="#">
+                                                    Next
+                                                    <i class="fa fa-angle-right"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!--paging end-->
+
+                            </div>
+                            <div style="background-color: white;border-radius: 15px; border: 2px solid black" class="ratting-form-wrapper fix">
+                                <div style="margin: 15px;">
+                                    <h3 style="font-weight: bold;">Thêm đánh giá</h3>
+                                    <form action="#">
+                                        <div class="ratting-form row">
+                                            <!-- Rating start -->
+                                            <div class="container d-flex ">
+                                                <h5 style="font-weight: bold;">Vote sao:</h5>
+                                                <div class="row">
+                                                    <div class="col-md-8">
+                                                        <div class="stars">
+                                                            <form action="">
+                                                                <input class="star star-5" id="star-5" type="radio" name="star" />
+                                                                <label class="star star-5" for="star-5"></label>
+                                                                <input class="star star-4" id="star-4" type="radio" name="star" />
+                                                                <label class="star star-4" for="star-4"></label>
+                                                                <input class="star star-3" id="star-3" type="radio" name="star" /> <label class="star star-3" for="star-3"></label>
+                                                                <input class="star star-2" id="star-2" type="radio" name="star" />
+                                                                <label class="star star-2" for="star-2"></label>
+                                                                <input class="star star-1" id="star-1" type="radio" name="star" />
+                                                                <label class="star star-1" for="star-1"></label>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Rating end -->
+
+                                            <div class="col-12 mb-15">
+                                                <label for="your-review">Nội dung đánh giá:</label>
+                                                <textarea name="review" id="your-review" placeholder="Viết đánh giá của bạn ở đây"></textarea>
+                                            </div>
+                                            <div class="col-12">
+                                                <input value="Thêm đánh giá" type="submit">
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+<!-- Single Product Section End -->
+<!-- Related Product Section Start -->
+<div class="product-section section mb-70">
+    <div class="container">
+        <div class="row">
+
+            <!-- Section Title Start -->
+            <div class="col-12 mb-40">
+                <div class="section-title-one" data-title="MÓN CÙNG DANH MỤC">
+                    <h1>MÓN CÙNG DANH MỤC</h1>
+                </div>
+            </div>
+            <!-- Section Title End -->
+            <!-- Product Tab Content Start -->
+            <div class="col-12">
+
+                <!-- Product Slider Wrap Start -->
+                <div class="product-slider-wrap product-slider-arrow-one">
+                    <!-- Product Slider Start -->
+                    <div class="product-slider product-slider-4">
+
+                        <div class="col pb-20 pt-10">
+                            <!-- Product Start -->
+                            <div class="ee-product">
+
+                                <!-- Image -->
+                                <div class="image">
+
+                                    <a href="SingleProduct" class="img"><img src="~/Assets/images/product/product-1.png" alt="Product Image"></a>
+
+                                    <a style="background-color: #f5d730;
+                                                               padding: 10px;
+                                                               border-radius: 25px;
+                                                               margin-left: 60px;
+                                                               margin-top: 10px;">
+                                        <i class="ti-shopping-cart"></i>
+                                        <input style="background: none; border: none;font-weight: bold;" type="submit" onclick="buy('${o.id}')" value="THÊM VÀO GIỎ" />
+                                    </a>
+
+                                </div>
+
+                                <!-- Content -->
+                                <div class="content">
+
+                                    <!-- Category & Title -->
+                                    <div class="category-title">
+
+                                        <a href="#" class="cat">Laptop</a>
+                                        <h5 class="title"><a href="SingleProduct">Zeon Zen 4 Pro</a></h5>
+
+                                    </div>
+
+                                    <!-- Price & Ratting -->
+                                    <div class="price-ratting">
+
+                                        <h5 class="price">$295.00</h5>
+                                        <div class="ratting">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star-half-o"></i>
+                                            <i class="fa fa-star-o"></i>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <!-- Product End -->
+                        </div>
+
+                        <div class="col pb-20 pt-10">
+                            <!-- Product Start -->
+                            <div class="ee-product">
+
+                                <!-- Image -->
+                                <div class="image">
+
+                                    <a href="SingleProduct" class="img"><img src="~/Assets/images/product/product-1.png" alt="Product Image"></a>
+
+                                    <a style="background-color: #f5d730;
+                                                               padding: 10px;
+                                                               border-radius: 25px;
+                                                               margin-left: 60px;
+                                                               margin-top: 10px;">
+                                        <i class="ti-shopping-cart"></i>
+                                        <input style="background: none; border: none;font-weight: bold;" type="submit" onclick="buy('${o.id}')" value="THÊM VÀO GIỎ" />
+                                    </a>
+
+                                </div>
+
+                                <!-- Content -->
+                                <div class="content">
+
+                                    <!-- Category & Title -->
+                                    <div class="category-title">
+
+                                        <a href="#" class="cat">Laptop</a>
+                                        <h5 class="title"><a href="SingleProduct">Zeon Zen 4 Pro</a></h5>
+
+                                    </div>
+
+                                    <!-- Price & Ratting -->
+                                    <div class="price-ratting">
+
+                                        <h5 class="price">$295.00</h5>
+                                        <div class="ratting">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star-half-o"></i>
+                                            <i class="fa fa-star-o"></i>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <!-- Product End -->
+                        </div>
+
+                        <div class="col pb-20 pt-10">
+                            <!-- Product Start -->
+                            <div class="ee-product">
+
+                                <!-- Image -->
+                                <div class="image">
+
+                                    <a href="SingleProduct" class="img"><img src="~/Assets/images/product/product-1.png" alt="Product Image"></a>
+
+                                    <a style="background-color: #f5d730;
+                                                               padding: 10px;
+                                                               border-radius: 25px;
+                                                               margin-left: 60px;
+                                                               margin-top: 10px;">
+                                        <i class="ti-shopping-cart"></i>
+                                        <input style="background: none; border: none;font-weight: bold;" type="submit" onclick="buy('${o.id}')" value="THÊM VÀO GIỎ" />
+                                    </a>
+
+                                </div>
+
+                                <!-- Content -->
+                                <div class="content">
+
+                                    <!-- Category & Title -->
+                                    <div class="category-title">
+
+                                        <a href="#" class="cat">Laptop</a>
+                                        <h5 class="title"><a href="SingleProduct">Zeon Zen 4 Pro</a></h5>
+
+                                    </div>
+
+                                    <!-- Price & Ratting -->
+                                    <div class="price-ratting">
+
+                                        <h5 class="price">$295.00</h5>
+                                        <div class="ratting">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star-half-o"></i>
+                                            <i class="fa fa-star-o"></i>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <!-- Product End -->
+                        </div>
+
+                        <div class="col pb-20 pt-10">
+                            <!-- Product Start -->
+                            <div class="ee-product">
+
+                                <!-- Image -->
+                                <div class="image">
+
+                                    <a href="SingleProduct" class="img"><img src="~/Assets/images/product/product-1.png" alt="Product Image"></a>
+
+                                    <a style="background-color: #f5d730;
+                                            padding: 10px;
+                                            border-radius: 25px;
+                                            margin-left: 60px;
+                                            margin-top: 10px;">
+                                        <i class="ti-shopping-cart"></i>
+                                        <input style="background: none; border: none;font-weight: bold;" type="submit" onclick="buy('${o.id}')" value="THÊM VÀO GIỎ" />
+                                    </a>
+
+                                </div>
+
+                                <!-- Content -->
+                                <div class="content">
+
+                                    <!-- Category & Title -->
+                                    <div class="category-title">
+
+                                        <a href="#" class="cat">Laptop</a>
+                                        <h5 class="title"><a href="SingleProduct">Zeon Zen 4 Pro</a></h5>
+
+                                    </div>
+
+                                    <!-- Price & Ratting -->
+                                    <div class="price-ratting">
+
+                                        <h5 class="price">$295.00</h5>
+                                        <div class="ratting">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star-half-o"></i>
+                                            <i class="fa fa-star-o"></i>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <!-- Product End -->
+                        </div>
+
+                        <div class="col pb-20 pt-10">
+                            <!-- Product Start -->
+                            <div class="ee-product">
+
+                                <!-- Image -->
+                                <div class="image">
+
+                                    <a href="SingleProduct" class="img"><img src="~/Assets/images/product/product-1.png" alt="Product Image"></a>
+
+                                    <a style="background-color: #f5d730;
+                                            padding: 10px;
+                                            border-radius: 25px;
+                                            margin-left: 60px;
+                                            margin-top: 10px;">
+                                        <i class="ti-shopping-cart"></i>
+                                        <input style="background: none; border: none;font-weight: bold;" type="submit" onclick="buy('${o.id}')" value="THÊM VÀO GIỎ" />
+                                    </a>
+
+                                </div>
+
+                                <!-- Content -->
+                                <div class="content">
+
+                                    <!-- Category & Title -->
+                                    <div class="category-title">
+
+                                        <a href="#" class="cat">Laptop</a>
+                                        <h5 class="title"><a href="SingleProduct">Zeon Zen 4 Pro</a></h5>
+
+                                    </div>
+
+                                    <!-- Price & Ratting -->
+                                    <div class="price-ratting">
+
+                                        <h5 class="price">$295.00</h5>
+                                        <div class="ratting">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star-half-o"></i>
+                                            <i class="fa fa-star-o"></i>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <!-- Product End -->
+                        </div>
+
+                    </div>
+                    <!-- Product Slider End -->
+                </div>
+                <!-- Product Slider Wrap End -->
+
+            </div>
+            <!-- Product Tab Content End -->
+
+        </div>
+    </div>
+</div>
+<!-- Related Product Section End -->

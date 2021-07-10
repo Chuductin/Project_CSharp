@@ -1,0 +1,70 @@
+﻿
+@{
+    ViewBag.Title = "AccountDetail";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!-- Register Section Start -->
+<!-- CSS của profile -->
+<link rel="stylesheet" href="~/Assets/css/profile.css">
+
+<div class="register-section section mt-90 mb-90">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 ">
+                <div class="headerAccount">
+                    <h1>TinCD</h1>
+                    <p>tincdhe140546@gmail.com</p>
+                    <ul>
+                        <li>
+                            <a href="Profile" class="option"><img src="~/Assets/images/icons/back2.png" /><span>Quay lại</span> </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+            <div style="margin-bottom: 50px;" class="col-md-9">
+                <div class="card">
+                    <!-- Product detail form -->
+                    <div id="editForm" style="display: block;" class="card-body">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4 style="font-weight: bold;">Thông tin khách hàng</h4>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <form>
+                                    <div class="form-group row">
+                                        <label for="username" class="col-4 col-form-label">Họ và Tên:</label>
+                                        <div class="col-8">
+                                            <input id="username" name="username" placeholder="Họ và tên khách hàng" class="form-control here" readonly type="text">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="name" class="col-4 col-form-label">Địa chỉ:</label>
+                                        <div class="col-8">
+                                            <input id="name" name="name" placeholder="Địa chỉ" class="form-control here" readonly type="text">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="lastname" class="col-4 col-form-label">Số điện thoại:</label>
+                                        <div class="col-8">
+                                            <input id="name" name="name" placeholder="Số điện thoại" class="form-control here" readonly type="text">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="email" class="col-4 col-form-label">Điểm tiêu dùng:</label>
+                                        <div class="col-8">
+                                            <input id="name" name="name" placeholder="Điểm tiêu dùng" class="form-control here" readonly type="text">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Register Section End -->
+

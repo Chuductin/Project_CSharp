@@ -1,0 +1,353 @@
+﻿<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Love Eat</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="~/Assets/images/favicon.ico">
+
+    <!-- CSS
+    ============================================ -->
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="~/Assets/css/bootstrap.min.css">
+
+    <!-- Icon Font CSS -->
+    <link rel="stylesheet" href="~/Assets/css/icon-font.min.css">
+
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="~/Assets/css/plugins.css">
+
+    <!-- Main Style CSS -->
+    <link rel="stylesheet" href="~/Assets/css/style.css">
+
+    <!-- Rating CSS -->
+    <link rel="stylesheet" href="~/Assets/css/rating.css">
+
+    <!-- Modernizer JS -->
+    <script src="~/Assets/js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+
+<body>
+
+    <!-- Header Section Start -->
+    <div class="header-section section">
+
+        <!-- Header Top Start -->
+        <div class="header-top header-top-one header-top-border pt-10 pb-10">
+            <div class="container">
+                <div class="row align-items-center justify-content-between">
+
+                    <div class="col mt-10 mb-10">
+                        <!-- Header Links Start -->
+                        <!-- <div class="header-links"> -->
+                        <div class="header-shop-links">
+                            <a href="Profile"><img src="~/Assets/images/icons/product.png" alt="Product Icon"><span style="font-weight: bold;">Đơn mua</span></a>
+                            <a href="#">
+                                <img src="~/Assets/images/icons/empty.png" alt="">
+                                <img src="~/Assets/images/icons/empty.png" alt="">
+                                <img src="~/Assets/images/icons/empty.png" alt="">
+                                <img src="~/Assets/images/icons/empty.png" alt="">
+                            </a>
+                        </div>
+                        <!-- Header Links End -->
+                    </div>
+
+                    <div class="col order-12 order-xs-12 order-lg-2 mt-10 mb-10">
+                        <!-- Header Advance Search Start -->
+                        <div class="header-advance-search">
+
+                            <form action="#">
+                                <div class="input"><input type="text" placeholder="Bạn muốn ăn gì?"></div>
+                                <div class="select">
+                                    <select class="nice-select">
+                                        <option>Tất cả danh mục</option>
+                                        <option>Đồ ăn sáng</option>
+                                        <option>Đồ ăn trưa</option>
+                                        <option>Đồ ăn tối</option>
+                                        <option>Nước uống</option>
+                                    </select>
+                                </div>
+                                <div class="submit"><button><i class="icofont icofont-search-alt-1"></i></button></div>
+                            </form>
+
+                        </div>
+                        <!-- Header Advance Search End -->
+                    </div>
+
+                    <div class="col order-2 order-xs-2 order-lg-12 mt-10 mb-10">
+                        <!-- Header Account Links Start -->
+                        <div class="header-account-links">
+                            <a href="Profile"><i class="icofont icofont-user-alt-7"></i> <span>Tài khoản</span></a>
+                            <a href="Login"><i class="icofont icofont-login d-none"></i> <span>Đăng nhập</span></a>
+                        </div>
+                        <!-- Header Account Links End -->
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- Header Top End -->
+        <!-- Header Bottom Start -->
+        <div class="header-bottom header-bottom-one header-sticky">
+            <div class="container">
+                <div class="row align-items-center justify-content-between">
+
+                    <div class="col mt-15 mb-15">
+                        <!-- Logo Start -->
+                        <div class="header-logo">
+                            <a href="Index">
+                                <img src="~/Assets/images/logo-small1.png" alt="Love Eat">
+                            </a>
+                        </div>
+                        <!-- Logo End -->
+                    </div>
+
+                    <div class="col order-12 order-lg-2 order-xl-2 d-none d-lg-block">
+                        <!-- Main Menu Start -->
+                        <div class="main-menu">
+                            <nav>
+                                <ul>
+                                    <li class=""><a href="Index">Trang chủ</a></li>
+                                    <li class="menu-item-has-children">
+                                        <a>Danh mục</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="ProductGrid">Đồ ăn sáng</a></li>
+                                            <li><a href="ProductGrid">Đồ ăn trưa</a></li>
+                                            <li><a href="ProductGrid">Đồ ăn tối</a></li>
+                                            <li><a href="ProductGrid">Khuyến mãi</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class=""><a href="#">Khuyến mãi</a></li>
+                                    <li class=""><a href="Contact">Liên hệ chúng tôi</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <!-- Main Menu End -->
+                    </div>
+
+                    <div class="col order-2 order-lg-12 order-xl-12">
+                        <!-- Header Shop Links Start -->
+                        <div class="header-shop-links">
+                            <!-- <a href="cart.html" class="header-cart"><i class="ti-shopping-cart"></i> <span class="number">3</span></a> -->
+                            <a href="Cart"><i class="ti-shopping-cart"></i><span class="number">3</span></a>
+                        </div>
+                        <!-- Header Shop Links End -->
+                    </div>
+
+                    <!-- Mobile Menu -->
+                    <div class="mobile-menu order-12 d-block d-lg-none col"></div>
+
+                </div>
+            </div>
+        </div>
+        <!-- Header Bottom End -->
+        <!-- ======================== HEADER END ========================== -->
+        @RenderBody()
+        <!-- ==============FOOTER====================== -->
+        <!-- Feature Section Start -->
+        <div class="feature-section section mb-60">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-4 col-md-6 col-12 mb-30">
+                        <!-- Feature Start -->
+                        <div class="feature feature-shipping">
+                            <div class="feature-wrap">
+                                <div class="icon"><img src="~/Assets/images/icons/feature-van.png" alt="Feature"></div>
+                                <h4>MIỄN PHÍ VẬN CHUYỂN</h4>
+                                <p>Đơn từ 50k</p>
+                            </div>
+                        </div>
+                        <!-- Feature End -->
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-12 mb-30">
+                        <!-- Feature Start -->
+                        <div class="feature feature-guarantee">
+                            <div class="feature-wrap">
+                                <div class="icon"><img src="~/Assets/images/icons/feature-walet.png" alt="Feature"></div>
+                                <h4>HOÀN TIỀN</h4>
+                                <p>Liên hệ xử lý đơn hàng</p>
+                            </div>
+                        </div>
+                        <!-- Feature End -->
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-12 mb-30">
+                        <!-- Feature Start -->
+                        <div class="feature feature-security">
+                            <div class="feature-wrap">
+                                <div class="icon"><img src="~/Assets/images/icons/feature-shield.png" alt="Feature"></div>
+                                <h4>BẢO MẬT THANH TOÁN</h4>
+                                <p>Phương thức thanh toán an toàn</p>
+                            </div>
+                        </div>
+                        <!-- Feature End -->
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- Feature Section End -->
+        <!-- Banner Section Start -->
+        <div class="banner-section section mb-60">
+            <div class="container">
+                <div class="row">
+
+                    <!-- Banner -->
+                    <div class="col-md-4 col-12 mb-30">
+                        <div class="banner">
+                            <a href="#"><img src="~/Assets/images/banner/banner-04.png" alt="Banner"></a>
+                        </div>
+                    </div>
+
+                    <!-- Banner -->
+                    <div class="col-md-4 col-12 mb-30">
+                        <div class="banner">
+                            <a href="#"><img src="~/Assets/images/banner/banner-05.png" alt="Banner"></a>
+                        </div>
+                    </div>
+
+                    <!-- Banner -->
+                    <div class="col-md-4 col-12 mb-30">
+                        <div class="banner">
+                            <a href="#"><img src="~/Assets/images/banner/banner-06.png" alt="Banner"></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- Banner Section End -->
+        <!-- Footer Section Start -->
+        <div class="footer-section section bg-ivory">
+
+            <!-- Footer Top Section Start -->
+            <div class="footer-top-section section pt-90 pb-50">
+                <div class="container">
+
+                    <!-- Footer Widget Start -->
+                    <div class="row">
+                        <div class="col mb-90">
+                            <div class="footer-widget text-center">
+                                <div class="footer-logo">
+                                    <img src="~/Assets/images/logo-small.png" alt="E&E - Electronics eCommerce Bootstrap4 HTML Template">
+                                    <img class="theme-dark" src="~/Assets/images/logo-light.png" alt="E&E - Electronics eCommerce Bootstrap4 HTML Template">
+                                </div>
+                                <h4 style="font-weight: bold;"><i>Món ngon cũng có thể khiến bạn phải lòng</i></h4>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Footer Widget End -->
+
+                    <div class="row">
+
+                        <!-- Footer Widget Start -->
+                        <div class="col-lg-3 col-md-6 col-12 mb-40">
+                            <div class="footer-widget">
+
+                                <h4 class="widget-title">THÔNG TIN LIÊN HỆ</h4>
+
+                                <p class="contact-info">
+                                    <span>Địa chỉ</span> Đường abc, ngõ xyz, Thành phố ijk
+                                </p>
+
+                                <p class="contact-info">
+                                    <span>Phone</span>
+                                    <a href="tel:01234567890">01234 567 890</a>
+                                    <a href="tel:01234567891">01234 567 891</a>
+                                </p>
+
+                                <p class="contact-info">
+                                    <span>Web</span>
+                                    <a href="mailto:info@example.com">info@example.com</a>
+                                    <a href="#">www.example.com</a>
+                                </p>
+
+                            </div>
+                        </div>
+                        <!-- Footer Widget End -->
+                        <!-- Footer Widget Start -->
+                        <div class="col-lg-3 col-md-6 col-12 mb-40">
+                            <div class="footer-widget">
+
+                                <h4 class="widget-title">CUSTOMER CARE</h4>
+
+                                <ul class="link-widget">
+                                    <li><a href="#">Menu món ăn</a></li>
+                                    <li><a href="#">Tài khoản</a></li>
+                                    <li><a href="#">Giỏ hàng</a></li>
+                                    <li><a href="#">Thanh toán</a></li>
+                                    <li><a href="#">Liên hệ</a></li>
+                                </ul>
+
+                            </div>
+                        </div>
+                        <!-- Footer Widget End -->
+                        <!-- Footer Widget Start -->
+                        <div class="col-lg-3 col-md-6 col-12 mb-40">
+                            <div class="footer-widget">
+
+                                <h4 class="widget-title">INFORMATION</h4>
+
+                                <ul class="link-widget">
+                                    <li><a href="#">Đơn hàng</a></li>
+                                    <li><a href="#">Vị trí cửa hàng</a></li>
+                                    <li><a href="#">Hỗ trợ online</a></li>
+                                    <li><a href="#">Phương thức thanh toán</a></li>
+                                    <li><a href="#">Shipping & Trả hàng</a></li>
+                                    <li><a href="#">Voucher giảm giá</a></li>
+                                </ul>
+
+                            </div>
+                        </div>
+                        <!-- Footer Widget End -->
+                    </div>
+                </div>
+            </div>
+            <!-- Footer Bottom Section Start -->
+            <!-- Footer Bottom Section Start -->
+            <div class="footer-bottom-section section">
+                <div class="container">
+                    <div class="row">
+
+                        <!-- Footer Copyright -->
+                        <div class="col-lg-6 col-12">
+                            <div class="footer-copyright">
+                                <p>&copy; Copyright, 2021 All Rights Reserved by Love Eat
+                            </div>
+                        </div>
+
+                        <!-- Footer Payment Support -->
+                        <div class="col-lg-6 col-12">
+                            <div class="footer-payments-image"><img src="~/Assets/images/payment-support.png" alt="Payment Support Image"></div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- Footer Bottom Section Start -->
+
+        </div>
+        <!-- Footer Section End -->
+        <!-- JS
+        ============================================ -->
+        <!-- jQuery JS -->
+        <script src="~/Assets/js/vendor/jquery-1.12.4.min.js"></script>
+        <!-- Popper JS -->
+        <script src="~/Assets/js/popper.min.js"></script>
+        <!-- Bootstrap JS -->
+        <script src="~/Assets/js/bootstrap.min.js"></script>
+        <!-- Plugins JS -->
+        <script src="~/Assets/js/plugins.js"></script>
+
+        <!-- Main JS -->
+        <script src="~/Assets/js/main.js"></script>
+
+</body>
+
+</html>

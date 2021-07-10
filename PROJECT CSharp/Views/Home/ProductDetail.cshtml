@@ -1,0 +1,115 @@
+﻿
+@{
+    ViewBag.Title = "ProductDetail";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!-- Register Section Start -->
+<!-- CSS của profile -->
+<link rel="stylesheet" href="~/Assets/css/profile.css">
+
+<div class="register-section section mt-90 mb-90">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 ">
+                <div class="headerAccount">
+                    <h1>TinCD</h1>
+                    <p>tincdhe140546@gmail.com</p>
+                    <ul>
+                        <li>
+                            <a href="Profile" class="option"><img src="~/Assets/images/icons/back2.png" /><span>Quay lại</span> </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+            <div style="margin-bottom: 50px;" class="col-md-9">
+                <div class="card">
+                    <!-- Product detail form -->
+                    <div id="editForm" style="display: block;" class="card-body">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4 style="font-weight: bold;">Chi tiết sản phẩm</h4>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <form>
+                                    <div class="form-group row">
+                                        <label for="username" class="col-4 col-form-label">Tên:</label>
+                                        <div class="col-8">
+                                            <input id="username" name="username" placeholder="Tên sản phẩm" class="form-control here" required="required" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="name" class="col-4 col-form-label">Giá:</label>
+                                        <div class="col-8">
+                                            <input id="name" name="name" placeholder="Giá sản phẩm" class="form-control here" required="required" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="lastname" class="col-4 col-form-label">Danh mục:</label>
+                                        <div class="col-8">
+                                            <div class="product-short">
+                                                <select name="category" style="border: 1px solid #edede9" class="nice-select" required="true">
+                                                    <option value="">Đồ ăn sáng</option>
+                                                    <option value="">Đồ ăn trưa & tối</option>
+                                                    <option value="">Nước uống</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="email" class="col-4 col-form-label">Trạng thái:</label>
+                                        <div class="col-8">
+                                            <div class="product-short">
+                                                <select name="continued" style="border: 1px solid #edede9" class="nice-select" required="true">
+                                                    <option value="1">Đang bán</option>
+                                                    <option value="2">Ngừng kinh doanh</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="email" class="col-4 col-form-label">Nguyên liệu:</label>
+                                        <div class="col-8">
+                                            <input id="email" name="email" placeholder="Các thành phần cách nhau bằng ký tự ';'" class="form-control here" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="email" class="col-4 col-form-label">Gia vị:</label>
+                                        <div class="col-8">
+                                            <input id="email" name="email" placeholder="Các thành phần cách nhau bằng ký tự ';'" class="form-control here" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="email" class="col-4 col-form-label">Link ảnh 1:</label>
+                                        <div class="col-8">
+                                            <input id="email" name="email" placeholder="Link ảnh 1" class="form-control here" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="email" class="col-4 col-form-label">Link ảnh 2:</label>
+                                        <div class="col-8">
+                                            <input id="email" name="email" placeholder="Link ảnh 2" class="form-control here" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="email" class="col-4 col-form-label">Link ảnh 3:</label>
+                                        <div class="col-8">
+                                            <input id="email" name="email" placeholder="Link ảnh 3" class="form-control here" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <div class="offset-4 col-8">
+                                            <button style="background-color:#f5d730; border-radius: 10px; border: 1px solid #edede9" name="submit" type="submit" class="btn ">Lưu sản phẩm</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Register Section End -->

@@ -1,0 +1,212 @@
+﻿
+@{
+    ViewBag.Title = "Checkout";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!-- Page Banner Section Start -->
+<div class="page-banner-section section">
+    <div class="page-banner-wrap row row-0 d-flex align-items-center ">
+
+        <!-- Page Banner -->
+        <div class="col-lg-4 col-12 order-lg-2 d-flex align-items-center justify-content-center">
+            <div class="page-banner">
+                <h1>Đặt hàng</h1>
+                <div class="breadcrumb">
+                    <ul>
+                        <li><a href="Index">Trang chủ</a></li>
+                        <li><a href="ProductGrid">Menu</a></li>
+                        <li><a href="#">Đặt hàng</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Banner -->
+        <div class="col-lg-4 col-md-6 col-12 order-lg-1">
+            <div class="banner">
+                <a href="#"><img src="~/Assets/images/banner/banner-015.png" alt="Banner"></a>
+            </div>
+        </div>
+
+        <!-- Banner -->
+        <div class="col-lg-4 col-md-6 col-12 order-lg-3">
+            <div class="banner">
+                <a href="#"><img src="~/Assets/images/banner/banner-016.png" alt="Banner"></a>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!-- Page Banner Section End -->
+<!-- Checkout Page Start -->
+<div class="page-section section mt-90 mb-30">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+
+                <!-- Checkout Form s-->
+                <form action="#" class="checkout-form">
+                    <div class="row row-40">
+
+                        <div class="col-lg-7 mb-20">
+
+                            <!-- Billing Address -->
+                            <div id="billing-form" class="mb-40">
+                                <h4 class="checkout-title">Địa chỉ thanh toán</h4>
+
+                                <div class="row">
+
+                                    <div class="col-12 mb-20">
+                                        <label>Họ Tên*</label>
+                                        <input style="width: 100%;" type="text" placeholder="Họ và tên">
+                                    </div>
+
+                                    <div class="col-md-6 col-12 mb-20">
+                                        <label>Email Address</label>
+                                        <input type="email" placeholder="Địa chỉ Email">
+                                    </div>
+
+                                    <div class="col-md-6 col-12 mb-20">
+                                        <label>Số điện thoại</label>
+                                        <input type="text" placeholder="Số điện thoại">
+                                    </div>
+
+                                    <div class="col-12 mb-20">
+                                        <label>Địa chỉ*</label>
+                                        <input type="text" placeholder="Địa chỉ nhận hàng">
+                                    </div>
+
+                                    <div class="col-12 mb-20">
+                                        <div class="check-box">
+                                            <input type="checkbox" id="shiping_address" data-shipping>
+                                            <label for="shiping_address">Gửi đến địa chỉ khác</label>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <!-- Shipping Address -->
+                            <div id="shipping-form" class="mb-40">
+                                <h4 class="checkout-title">Địa chỉ nhận hàng</h4>
+
+                                <div class="row">
+
+                                    <div class="col-12 mb-20">
+                                        <label>Họ Tên*</label>
+                                        <input style="width: 100%;" type="text" placeholder="Họ và tên">
+                                    </div>
+
+                                    <div class="col-md-6 col-12 mb-20">
+                                        <label>Email Address</label>
+                                        <input type="email" placeholder="Địa chỉ Email">
+                                    </div>
+
+                                    <div class="col-md-6 col-12 mb-20">
+                                        <label>Số điện thoại</label>
+                                        <input type="text" placeholder="Số điện thoại">
+                                    </div>
+
+                                    <div class="col-12 mb-20">
+                                        <label>Địa chỉ*</label>
+                                        <input type="text" placeholder="Địa chỉ nhận hàng">
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-lg-5">
+                            <div class="row">
+
+                                <!-- Cart Total -->
+                                <div class="col-12 mb-60">
+
+                                    <h4 class="checkout-title">Giỏ hàng</h4>
+
+                                    <div class="checkout-cart-total">
+
+                                        <h4>Món <span>Tiền</span></h4>
+
+                                        <ul>
+                                            <li>Samsome Notebook Pro 5 X 01 <span>$295.00</span></li>
+                                            <li>Aquet Drone D 420 X 02 <span>$550.00</span></li>
+                                            <li>Play Station X 22 X 01 <span>$295.00</span></li>
+                                            <li>Roxxe Headphone Z 75 X 01 <span>$110.00</span></li>
+                                        </ul>
+
+                                        <p>Tổng tiền <span>$1250.00</span></p>
+                                        <p>Phí ship <span>$00.00</span></p>
+
+                                        <h4>Thành tiền <span>$1250.00</span></h4>
+
+                                    </div>
+
+                                </div>
+
+                                <!-- Payment Method -->
+                                <div class="col-12 mb-60">
+
+                                    <h4 class="checkout-title">Phương thức thanh toán</h4>
+
+                                    <div class="checkout-payment-method">
+
+                                        <div class="single-method">
+                                            <input type="radio" id="payment_bank" name="payment-method" value="bank">
+                                            <label for="payment_bank">Chuyển tiền trực tiếp qua ngân hàng</label>
+                                            <p data-method="bank">Đơn hàng sẽ được chuẩn bị sau khi xác nhận thanh toán</p>
+                                        </div>
+
+                                        <div class="single-method">
+                                            <input type="radio" id="payment_cash" name="payment-method" value="cash">
+                                            <label for="payment_cash">Thanh toán khi nhận hàng</label>
+                                            <p data-method="cash">Đơn hàng sẽ được chuẩn bị sau cuộc gọi xác nhận đơn hàng</p>
+                                        </div>
+
+                                        <div class="single-method">
+                                            <input type="radio" id="payment_paypal" name="payment-method" value="paypal">
+                                            <label for="payment_paypal">Paypal</label>
+                                            <p data-method="paypal">Thanh toán trước bằng Paypal</p>
+                                        </div>
+
+                                        <div class="single-method">
+                                            <input type="checkbox" id="accept_terms">
+                                            <label for="accept_terms">Tôi đã đọc và đồng ý với điều khoản sử dụng và bảo mật thông tin cá nhân</label>
+                                        </div>
+
+                                    </div>
+
+                                    <button class="place-order" type="submit">Đặt hàng</button>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Checkout Page End -->
+<!-- Banner Section Start -->
+<div class="banner-section section mb-90">
+    <div class="container">
+        <div class="row">
+
+            <!-- Banner -->
+            <div class="col-12">
+                <div class="banner">
+                    <a href="#"><img src="~/Assets/images/banner/banner-010.png" alt="Banner"></a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- Banner Section End -->

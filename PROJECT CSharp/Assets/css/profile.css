@@ -1,0 +1,122 @@
+        .headerAccount {
+            height: auto;
+            background-color: #f5d730;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            margin-bottom: 50px;
+        }
+        
+        .headerAccount h1 {
+            padding-top: 30px;
+        }
+        
+        .headerAccount p {
+            padding-bottom: 30px;
+        }
+        
+        .headerAccount h1,
+        p {
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            color: black;
+        }
+        
+        .headerAccount ul {
+            width: 100%;
+        }
+        
+        .headerAccount li {
+            width: 100%;
+            background-color: white;
+            border: 1px solid #edede9;
+        }
+        
+        .headerAccount a {
+            padding: 10px;
+            width: 100%;
+        }
+        
+        .headerAccount ul li.select a {
+            margin-left: 20px;
+            background-color: #f8f7f5;
+            border-left: 5px solid #f5d730;
+        }
+        
+        a.option:hover {
+            padding-left: 40px;
+            background-color: #f8f7f5;
+        }
+        
+        .headerAccount li:last-child {
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+        
+        .headerManage {
+            width: 100%;
+            padding-bottom: 10px;
+        }
+        
+        .headerManage a {
+            float: right;
+            margin-bottom: 10px;
+        }
+        
+        .headerManage h4 {
+            float: left;
+            padding-top: 20px;
+        }
+        
+        .headerManage hr {
+            clear: both;
+        }
+        
+        .spiner {
+            border-radius: 5px;
+            border: 1px solid #d5dadf;
+            height: 38px;
+        }
+        
+        .btnAdmin {
+            background-color: red;
+            width: 62px;
+            color: yellow;
+            font-weight: bold;
+            padding: 6px;
+            border-radius: 5px;
+        }
+        
+        .btnActive {
+            background-color: #28a745;
+            width: 84px;
+            color: black;
+            font-weight: bold;
+            padding: 6px;
+            border-radius: 5px;
+        }
+        
+        .btnBlock {
+            background-color: red;
+            width: 84px;
+            color: black;
+            font-weight: bold;
+            padding: 6px;
+            border-radius: 5px;
+        }
+        
+        .btnUser {
+            background-color: #007bff;
+            width: 62px;
+            color: black;
+            font-weight: bold;
+            padding: 6px;
+            border-radius: 5px;
+        }
+        
+        .tableAccount th,
+        td {
+            padding: 10px;
+        }

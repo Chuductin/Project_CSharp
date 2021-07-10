@@ -1,0 +1,621 @@
+﻿
+@{
+    ViewBag.Title = "Profile";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!-- Profile Section Start -->
+<!-- CSS của profile -->
+<link rel="stylesheet" href="~/Assets/css/profile.css">
+
+<div class="register-section section mt-90 mb-90">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 ">
+                <div class="headerAccount">
+                    <h1>TinCD</h1>
+                    <p>tincdhe140546@gmail.com</p>
+                    <!-- Menu bar -->
+                    <ul>
+                        <li class="select">
+                            <a class="option" id="viewOrder" onClick="viewOrder()"><img style="margin-right: 10px;" src="~/Assets/images/icons/activity_history2.png" /><span>Đơn mua</span></a>
+                        </li>
+                        <li>
+                            <a class="option" id="editprofile" id="editprofile" onClick="edit()"><img style="margin-right: 10px;" src="~/Assets/images/icons/profile2.png" /><span>Hồ sơ</span></a>
+                        </li>
+                        <li>
+                            <a class="option" id="changePass" onClick="changePass()"><img style="margin-right: 10px;" src="~/Assets/images/icons/password2.png" /><span>Đổi mật khẩu</span></a>
+                        </li>
+                        <li>
+                            <a class="option" id="manageP" onClick="manageProduct()"><img style="margin-right: 10px;" src="~/Assets/images/icons/list2.png" /><span>Quản lí thực đơn</span></a>
+                        </li>
+                        <li>
+                            <a class="option" id="manageCat" onClick="manageCategory()"><img style="margin-right: 10px;" src="~/Assets/images/icons/list_manage2.png" /><span>Quản lí danh mục</span></a>
+                        </li>
+                        <li>
+                            <a class="option" id="manageVou" onClick="manageVoucher()"><img style="margin-right: 10px;" src="~/Assets/images/icons/voucher2.png" /><span>Quản lí Voucher giảm giá</span></a>
+                        </li>
+                        <li>
+                            <a class="option" id="manageAcc" onClick="manageAccout()"><img style="margin-right: 10px;" src="~/Assets/images/icons/user_shield2.png" /><span>Quản lí tài khoản</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div style="margin-bottom: 50px;" class="col-md-9">
+                <div class="card">
+                    <!-- Edit profile form start-->
+                    <div id="editForm" style="display: none;" class="card-body">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4 style="font-weight: bold;">Thông tin tài khoản</h4>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <form>
+                                    <div class="form-group row">
+                                        <label for="username" class="col-4 col-form-label">Họ và tên*</label>
+                                        <div class="col-8">
+                                            <input id="username" name="username" placeholder="Họ và tên" class="form-control here" required="required" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="name" class="col-4 col-form-label">Địa chỉ*</label>
+                                        <div class="col-8">
+                                            <input id="name" name="name" placeholder="Địa chỉ nhận hàng" class="form-control here" required="required" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="lastname" class="col-4 col-form-label">Số điện thoại*</label>
+                                        <div class="col-8">
+                                            <input id="lastname" name="lastname" placeholder="số điện thoại" class="form-control here" required="required" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="email" class="col-4 col-form-label">Email*</label>
+                                        <div class="col-8">
+                                            <input id="email" name="email" placeholder="Email" class="form-control here" required="required" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <div class="offset-4 col-8">
+                                            <button style="background-color:#f5d730; border-radius: 10px; border: 1px solid #edede9" name="submit" type="submit" class="btn ">Lưu thông tin</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <!-- Edit profile form end-->
+                    </div>
+                    <!-- Change password form start-->
+                    <div id="changePassword" style="display: none" class="card-body">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4 style="font-weight: bold;">Đổi mật khẩu</h4>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <form>
+                                    <div class="form-group row">
+                                        <label for="username" class="col-4 col-form-label">Mật khẩu cũ*</label>
+                                        <div class="col-8">
+                                            <input id="username" name="username" placeholder="Nhập mật khẩu cũ" class="form-control here" required="required" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="name" class="col-4 col-form-label">Mật khẩu mới*</label>
+                                        <div class="col-8">
+                                            <input id="name" name="name" placeholder="Nhập mật khẩu mới" class="form-control here" required="required" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="lastname" class="col-4 col-form-label">Nhập lại mật khẩu mới*</label>
+                                        <div class="col-8">
+                                            <input id="lastname" name="lastname" placeholder="Xác nhận mật khẩu mới" class="form-control here" required="required" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <div class="offset-4 col-8">
+                                            <button style="background-color:#f5d730; border-radius: 10px; border: 1px solid #edede9" name="submit" type="submit" class="btn ">Đổi mật khẩu</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <!-- Change password form end -->
+                    </div>
+                    <!-- View history order form start-->
+                    <div id="historyOrder" style="display: block" class="card-body">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4 style="font-weight: bold;">Lịch sử mua hàng</h4>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="cart-table table-responsive">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th class="pro-thumbnail">Hình ảnh</th>
+                                        <th class="pro-title">Đặt hàng</th>
+                                        <th class="pro-subtotal">Tổng</th>
+                                        <th class="pro-remove">Chi tiết</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="pro-thumbnail">
+                                            <a href="#"><img src="https://ucarecdn.com/067f26fc-a6d1-464e-95fa-2b5a173fe238/pizzahaisan3.png" alt="Product"></a>
+                                        </td>
+                                        <td class="pro-title"><span>dd/MM/yyyy hh:mm:ss</span></td>
+                                        <td class="pro-subtotal"><span>160000</span></td>
+                                        <td class=""><a href="OrderDetail" class="btn" style="background-color:#f5d730; border-radius: 10px; border: 1px solid #edede9" href="order-detail.html">Chi tiết</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="pro-thumbnail">
+                                            <a href="#"><img src="~/Assets/images/product/product-1.png" alt="Product"></a>
+                                        </td>
+                                        <td class="pro-title"><span>dd/MM/yyyy hh:mm:ss</span></td>
+                                        <td class="pro-subtotal"><span>40000</span></td>
+                                        <td class=""><a class="btn" style="background-color:#f5d730; border-radius: 10px; border: 1px solid #edede9" href="order-detail.html">Chi tiết</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="pro-thumbnail">
+                                            <a href="#"><img src="~/Assets/images/product/product-1.png" alt="Product"></a>
+                                        </td>
+                                        <td class="pro-title"><span>dd/MM/yyyy hh:mm:ss</span></td>
+                                        <td class="pro-subtotal"><span>40000</span></td>
+                                        <td class=""><a class="btn" style="background-color:#f5d730; border-radius: 10px; border: 1px solid #edede9" href="order-detail.html">Chi tiết</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="pro-thumbnail">
+                                            <a href="#"><img src="~/Assets/images/product/product-1.png" alt="Product"></a>
+                                        </td>
+                                        <td class="pro-title"><span>dd/MM/yyyy hh:mm:ss</span></td>
+                                        <td class="pro-subtotal"><span>40000</span></td>
+                                        <td class=""><a class="btn" style="background-color:#f5d730; border-radius: 10px; border: 1px solid #edede9" href="order-detail.html">Chi tiết</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <!-- Pagination start -->
+                            <div class="row mt-30">
+                                <div class="col">
+
+                                    <ul class="pagination">
+                                        <li><a href="#"><i class="fa fa-angle-left"></i>Back</a></li>
+                                        <li><a href="#">1</a></li>
+                                        <li class="active"><a href="#">2</a></li>
+                                        <li><a href="#">3</a></li>
+                                        <li> - - - - - </li>
+                                        <li><a href="#">18</a></li>
+                                        <li><a href="#">18</a></li>
+                                        <li><a href="#">20</a></li>
+                                        <li><a href="#">Next<i class="fa fa-angle-right"></i></a></li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                            <!-- Pagination end -->
+                        </div>
+                        <!-- View history order form end-->
+                    </div>
+
+                    <!-- Manage product start -->
+                    <div id="manageProduct" style="display: none" class="card-body">
+                        <div class="row">
+                            <div class="col-md-12 headerManage">
+                                <h4 style="font-weight: bold;">Quản lí món</h4>
+                                <div style="margin-left: 50px; padding-top: 13px;" class="product-short">
+                                    <p>Danh mục:</p>
+                                    <select name="category" class="nice-select">
+                                        <option value="sales">Tất cả</option>
+                                        <option value="sales">Đồ ăn sáng</option>
+                                        <option value="sales">Đồ ăn trưa & tối</option>
+                                        <option value="sales">Đồ ăn vặt</option>
+                                        <option value="sales">Nước uống</option>
+                                    </select>
+                                </div>
+                                <a class="btn" style="background-color:#f5d730; border-radius: 10px; border: 1px solid #edede9" href="ProductDetail"><img src="~/Assets/images/icons/add.png" /><span>Thêm mới</span></a>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="cart-table table-responsive">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th class="pro-thumbnail">Hình ảnh</th>
+                                        <th class="pro-title">Món</th>
+                                        <th class="pro-subtotal">Giá</th>
+                                        <th class="pro-title">Danh mục</th>
+                                        <th class="pro-remove">Trạng thái</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="pro-thumbnail">
+                                            <a href="single-product.html"><img src="https://ucarecdn.com/067f26fc-a6d1-464e-95fa-2b5a173fe238/pizzahaisan3.png" alt="Product"></a>
+                                        </td>
+                                        <td class="pro-title"><a href="single-product.html">Zeon Zen 4 Pro </a></td>
+                                        <td class="pro-subtotal"><span>20000</span></td>
+                                        <td class="pro-title"><span style="font-weight: bold;">Đồ ăn trưa & tối</span></td>
+                                        <td class="">
+                                            <a href="statusAccount?pId=${o.pId}"><input type="submit" value="Ngừng bán" style="border: none" class="btn btn-danger" title="Click đổi trạng thái Kinh doanh" /></a>
+                                            <a href="ProductDetail" title="Chỉnh sửa"><img src="~/Assets/images/icons/edit.png" /></a>
+                                            <a href="#" title="Xoá bỏ"><img src="~/Assets/images/icons/trash.png" /></a>
+                                        </td>
+                                        <td class=""></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="pro-thumbnail">
+                                            <a href="single-product.html"><img src="https://ucarecdn.com/067f26fc-a6d1-464e-95fa-2b5a173fe238/pizzahaisan3.png" alt="Product"></a>
+                                        </td>
+                                        <td class="pro-title"><a href="single-product.html">Zeon Zen 4 Pro </a></td>
+                                        <td class="pro-subtotal"><span>20000</span></td>
+                                        <td class="pro-title"><span style="font-weight: bold;">Đồ ăn trưa & tối</span></td>
+                                        <td class="">
+                                            <a href="statusAccount?pId=${o.pId}"><input type="submit" value="Đang bán" style="border: none" class="btn btn-success" title="Click đổi trạng thái Kinh doanh" /></a>
+                                            <a href="ProductDetail" title="Chỉnh sửa"><img src="~/Assets/images/icons/edit.png" /></a>
+                                            <a href="#" title="Xoá bỏ"><img src="~/Assets/images/icons/trash.png" /></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="pro-thumbnail">
+                                            <a href="single-product.html"><img src="https://ucarecdn.com/067f26fc-a6d1-464e-95fa-2b5a173fe238/pizzahaisan3.png" alt="Product"></a>
+                                        </td>
+                                        <td class="pro-title"><a href="single-product.html">Zeon Zen 4 Pro </a></td>
+                                        <td class="pro-subtotal"><span>20000</span></td>
+                                        <td class="pro-title"><span style="font-weight: bold;">Đồ ăn trưa & tối</span></td>
+                                        <td class="">
+                                            <a href="statusAccount?pId=${o.pId}"><input type="submit" value="Đang bán" style="border: none" class="btn btn-success" title="Click đổi trạng thái Kinh doanh" /></a>
+                                            <a href="ProductDetail" title="Chỉnh sửa"><img src="~/Assets/images/icons/edit.png" /></a>
+                                            <a href="#" title="Xoá bỏ"><img src="~/Assets/images/icons/trash.png" /></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="pro-thumbnail">
+                                            <a href="single-product.html"><img src="https://ucarecdn.com/067f26fc-a6d1-464e-95fa-2b5a173fe238/pizzahaisan3.png" alt="Product"></a>
+                                        </td>
+                                        <td class="pro-title"><a href="single-product.html">Zeon Zen 4 Pro </a></td>
+                                        <td class="pro-subtotal"><span>20000</span></td>
+                                        <td class="pro-title"><span style="font-weight: bold;">Đồ ăn trưa & tối</span></td>
+                                        <td class="">
+                                            <a href="statusAccount?pId=${o.pId}"><input type="submit" value="Ngừng bán" class="btn btn-danger statusProduct" title="Click đổi trạng thái Kinh doanh" /></a>
+                                            <a href="ProductDetail" title="Chỉnh sửa"><img src="~/Assets/images/icons/edit.png" /></a>
+                                            <a href="#" title="Xoá bỏ"><img src="~/Assets/images/icons/trash.png" /></a>
+                                        </td>
+                                        <td class=""></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="pro-thumbnail">
+                                            <a href="single-product.html"><img src="https://ucarecdn.com/067f26fc-a6d1-464e-95fa-2b5a173fe238/pizzahaisan3.png" alt="Product"></a>
+                                        </td>
+                                        <td class="pro-title"><a href="single-product.html">Zeon Zen 4 Pro </a></td>
+                                        <td class="pro-subtotal"><span>20000</span></td>
+                                        <td class="pro-title"><span style="font-weight: bold;">Đồ ăn trưa & tối</span></td>
+                                        <td class="">
+                                            <a href="statusAccount?pId=${o.pId}"><input type="submit" value="Đang bán" style="border: none" class="btn btn-success" title="Click đổi trạng thái Kinh doanh" /></a>
+                                            <a href="ProductDetail" title="Chỉnh sửa"><img src="~/Assets/images/icons/edit.png" /></a>
+                                            <a href="#" title="Xoá bỏ"><img src="~/Assets/images/icons/trash.png" /></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="pro-thumbnail">
+                                            <a href="single-product.html"><img src="https://ucarecdn.com/067f26fc-a6d1-464e-95fa-2b5a173fe238/pizzahaisan3.png" alt="Product"></a>
+                                        </td>
+                                        <td class="pro-title"><a href="single-product.html">Zeon Zen 4 Pro </a></td>
+                                        <td class="pro-subtotal"><span>20000</span></td>
+                                        <td class="pro-title"><span style="font-weight: bold;">Đồ ăn trưa & tối</span></td>
+                                        <td class="">
+                                            <a href="statusAccount?pId=${o.pId}"><input type="submit" value="Đang bán" style="border: none" class="btn btn-success" title="Click đổi trạng thái Kinh doanh" /></a>
+                                            <a href="ProductDetail" title="Chỉnh sửa"><img src="~/Assets/images/icons/edit.png" /></a>
+                                            <a href="#" title="Xoá bỏ"><img src="~/Assets/images/icons/trash.png" /></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="pro-thumbnail">
+                                            <a href="single-product.html"><img src="https://ucarecdn.com/067f26fc-a6d1-464e-95fa-2b5a173fe238/pizzahaisan3.png" alt="Product"></a>
+                                        </td>
+                                        <td class="pro-title"><a href="single-product.html">Zeon Zen 4 Pro </a></td>
+                                        <td class="pro-subtotal"><span>20000</span></td>
+                                        <td class="pro-title"><span style="font-weight: bold;">Đồ ăn trưa & tối</span></td>
+                                        <td class="">
+                                            <a href="statusAccount?pId=${o.pId}"><input type="submit" value="Ngừng bán" style="border: none" class="btn btn-danger" title="Click đổi trạng thái Kinh doanh" /></a>
+                                            <a href="ProductDetail" title="Chỉnh sửa"><img src="~/Assets/images/icons/edit.png" /></a>
+                                            <a href="#" title="Xoá bỏ"><img src="~/Assets/images/icons/trash.png" /></a>
+                                        </td>
+                                        <td class=""></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="pro-thumbnail">
+                                            <a href="single-product.html"><img src="https://ucarecdn.com/067f26fc-a6d1-464e-95fa-2b5a173fe238/pizzahaisan3.png" alt="Product"></a>
+                                        </td>
+                                        <td class="pro-title"><a href="single-product.html">Zeon Zen 4 Pro </a></td>
+                                        <td class="pro-subtotal"><span>20000</span></td>
+                                        <td class="pro-title"><span style="font-weight: bold;">Đồ ăn trưa & tối</span></td>
+                                        <td class="">
+                                            <a href="statusAccount?pId=${o.pId}"><input type="submit" value="Đang bán" style="border: none" class="btn btn-success" title="Click đổi trạng thái Kinh doanh" /></a>
+                                            <a href="ProductDetail" title="Chỉnh sửa"><img src="~/Assets/images/icons/edit.png" /></a>
+                                            <a href="#" title="Xoá bỏ"><img src="~/Assets/images/icons/trash.png" /></a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <!-- Pagination start -->
+                            <div class="row mt-30">
+                                <div class="col">
+
+                                    <ul class="pagination">
+                                        <li><a href="#"><i class="fa fa-angle-left"></i>Back</a></li>
+                                        <li><a href="#">1</a></li>
+                                        <li class="active"><a href="#">2</a></li>
+                                        <li><a href="#">3</a></li>
+                                        <li> - - - - - </li>
+                                        <li><a href="#">18</a></li>
+                                        <li><a href="#">18</a></li>
+                                        <li><a href="#">20</a></li>
+                                        <li><a href="#">Next<i class="fa fa-angle-right"></i></a></li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                            <!-- Pagination end -->
+                        </div>
+                        <!-- Manage product end -->
+                    </div>
+
+                    <!-- Manage Category -->
+                    <div id="manageCate" style="display: none;" class="card-body">
+                        <div class="row">
+                            <div class="col-md-12 headerManage">
+                                <h4 style="font-weight: bold;">Quản lí danh mục</h4>
+                                <a class="btn" style="background-color:#f5d730; border-radius: 10px; border: 1px solid #edede9" href="CategoryDetail"><img src="~/Assets/images/icons/add.png" /><span>Thêm mới</span></a>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="cart-table table-responsive">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th class="pro-title">Tên danh mục</th>
+                                        <th class="pro-remove">Sửa </th>
+                                        <th class="pro-remove">Xoá</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="pro-title"><a>Đồ ăn sáng</a></td>
+                                        <td class="pro-remove">
+                                            <a href="CategoryDetail" title="Chỉnh sửa"><img src="~/Assets/images/icons/edit.png" /></a>
+                                        </td>
+                                        <td class="pro-remove">
+                                            <a href="#" title="Xoá bỏ"><img src="~/Assets/images/icons/trash.png" /></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="pro-title"><a>Đồ ăn trưa & tối</a></td>
+                                        <td class="pro-remove">
+                                            <a href="CategoryDetail" title="Chỉnh sửa"><img src="~/Assets/images/icons/edit.png" /></a>
+                                        </td>
+                                        <td class="pro-remove">
+                                            <a href="#" title="Xoá bỏ"><img src="~/Assets/images/icons/trash.png" /></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="pro-title"><a>Đồ ăn vặt</a></td>
+                                        <td class="pro-remove">
+                                            <a href ="CategoryDetail" title="Chỉnh sửa"><img src="~/Assets/images/icons/edit.png" /></a>
+                                        </td>
+                                        <td class="pro-remove">
+                                            <a href="#" title="Xoá bỏ"><img src="~/Assets/images/icons/trash.png" /></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="pro-title"><a>Nước uống</a></td>
+                                        <td class="pro-remove">
+                                            <a href="CategoryDetail" title="Chỉnh sửa"><img src="~/Assets/images/icons/edit.png" /></a>
+                                        </td>
+                                        <td class="pro-remove">
+                                            <a href="#" title="Xoá bỏ"><img src="~/Assets/images/icons/trash.png" /></a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- Manage category end -->
+                    </div>
+
+                    <!-- Manage Voucher start -->
+                    <div id="manageVoucher" style="display: none" class="card-body">
+                        <div class="row">
+                            <div class="col-md-12 headerManage">
+                                <h4 style="font-weight: bold;">Quản lí mã giảm giá</h4>
+                                <a class="btn" style="background-color:#f5d730; border-radius: 10px; border: 1px solid #edede9" href="VoucherDetail"><img src="~/Assets/images/icons/add.png" /><span>Thêm mới</span></a>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="cart-table table-responsive">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th class="pro-title">Mã Voucher</th>
+                                        <th class="pro-subtotal">%</th>
+                                        <th class="pro-title">Số lượng</th>
+                                        <th class="pro-remove">Sửa</th>
+                                        <th class="pro-removee">Xoá</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="pro-title"><a>GOLDENTDAY</a></td>
+                                        <td class="pro-subtotal"><span>30%</span></td>
+                                        <td class="pro-title"><span style="font-weight: bold;">5</span></td>
+                                        <td class="pro-removee">
+                                            <a href="VoucherDetail" title="Chỉnh sửa"><img src="~/Assets/images/icons/edit.png" /></a>
+
+                                        </td>
+                                        <td class="pro-removee">
+                                            <a href="#" title="Xoá bỏ"><img src="~/Assets/images/icons/trash.png" /></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="pro-title"><a>HOTSELL</a></td>
+                                        <td class="pro-subtotal"><span>15%</span></td>
+                                        <td class="pro-title"><span style="font-weight: bold;">4</span></td>
+                                        <td class="pro-removee">
+                                            <a href="VoucherDetail" title="Chỉnh sửa"><img src="~/Assets/images/icons/edit.png" /></a>
+
+                                        </td>
+                                        <td class="pro-removee">
+                                            <a href="#" title="Xoá bỏ"><img src="~/Assets/images/icons/trash.png" /></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="pro-title"><a>SELL123</a></td>
+                                        <td class="pro-subtotal"><span>25%</span></td>
+                                        <td class="pro-title"><span style="font-weight: bold;">5</span></td>
+                                        <td class="pro-removee">
+                                            <a href="VoucherDetail" title="Chỉnh sửa"><img src="~/Assets/images/icons/edit.png" /></a>
+
+                                        </td>
+                                        <td class="pro-removee">
+                                            <a href="#" title="Xoá bỏ"><img src="~/Assets/images/icons/trash.png" /></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="pro-title"><a>DAY&&</a></td>
+                                        <td class="pro-subtotal"><span>40%</span></td>
+                                        <td class="pro-title"><span style="font-weight: bold;">5</span></td>
+                                        <td class="pro-removee">
+                                            <a href="VoucherDetail" title="Chỉnh sửa"><img src="~/Assets/images/icons/edit.png" /></a>
+
+                                        </td>
+                                        <td class="pro-removee">
+                                            <a href="#" title="Xoá bỏ"><img src="~/Assets/images/icons/trash.png" /></a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- Manage voucher end -->
+                    </div>
+
+                    <!-- Manage account start -->
+                    <div id="manageAccount" style="display: none" class="card-body">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4 style="font-weight: bold;">Quản lí tài khoản</h4>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="cart-table table-responsive">
+                            <table class="table tableAccount">
+                                <thead>
+                                    <tr>
+                                        <th class="pro-title">Tên đăng nhập</th>
+                                        <th class="pro-title">Email</th>
+                                        <th class="pro-remove">Phân quyền</th>
+                                        <th class="pro-remove">Trạng thái</th>
+                                        <th class="pro-remove">Chi tiết</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="pro-title">
+                                            <a>Adam</a>
+                                        </td>
+                                        <td class="pro-title"><a>example@gmail.com</a></td>
+                                        <td class="">
+                                            <input type="submit" value="User" style="border: none" class="btnUser" title="Click phân quyền ADMIN" />
+                                        </td>
+                                        <td class="">
+                                            <input type="submit" value="Hoạt động" style="border: none" class="btnActive" title="Click đổi trạng thái" />
+                                        </td>
+                                        <td class=""><a class="btn" style="background-color:#f5d730; border-radius: 10px; border: 1px solid #edede9" href="AccountDetail">Chi tiết</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="pro-title">
+                                            <a>Adam</a>
+                                        </td>
+                                        <td class="pro-title"><a>example@gmail.com</a></td>
+                                        <td class="">
+                                            <input type="submit" value="User" style="border: none" class="btnUser" title="Click phân quyền ADMIN" />
+                                        </td>
+                                        <td class="">
+                                            <input type="submit" value="Hoạt động" style="border: none" class="btnActive" title="Click đổi trạng thái" />
+                                        </td>
+                                        <td class=""><a class="btn" style="background-color:#f5d730; border-radius: 10px; border: 1px solid #edede9" href="AccountDetail">Chi tiết</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="pro-title">
+                                            <a>Adam</a>
+                                        </td>
+                                        <td class="pro-title"><a>example@gmail.com</a></td>
+                                        <td class="">
+                                            <input type="submit" value="User" style="border: none" class="btnUser" title="Click phân quyền ADMIN" />
+                                        </td>
+                                        <td class="">
+                                            <input type="submit" value="Block" style="border: none" class="btnBlock" title="Click đổi trạng thái" />
+                                        </td>
+                                        <td class=""><a class="btn" style="background-color:#f5d730; border-radius: 10px; border: 1px solid #edede9" href="AccountDetail">Chi tiết</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="pro-title">
+                                            <a>Adam</a>
+                                        </td>
+                                        <td class="pro-title"><a>example@gmail.com</a></td>
+                                        <td class="">
+                                            <input type="submit" value="ADMIN" style="border: none" class="btnAdmin" title="Click phân quyền ADMIN" />
+                                        </td>
+                                        <td class="">
+                                            <input type="submit" value="Hoạt động" style="border: none" class="btnActive" title="Click đổi trạng thái" />
+                                        </td>
+                                        <td class=""><a class="btn" style="background-color:#f5d730; border-radius: 10px; border: 1px solid #edede9" href="AccountDetail">Chi tiết</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="pro-title">
+                                            <a>Adam</a>
+                                        </td>
+                                        <td class="pro-title"><a>example@gmail.com</a></td>
+                                        <td class="">
+                                            <input type="submit" value="User" style="border: none" class="btnUser" title="Click phân quyền ADMIN" />
+                                        </td>
+                                        <td class="">
+                                            <input type="submit" value="Hoạt động" style="border: none" class="btnActive" title="Click đổi trạng thái" />
+                                        </td>
+                                        <td class=""><a class="btn" style="background-color:#f5d730; border-radius: 10px; border: 1px solid #edede9" href="AccountDetail">Chi tiết</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <!-- Pagination start -->
+                            <div class="row mt-30">
+                                <div class="col">
+
+                                    <ul class="pagination">
+                                        <li><a href="#"><i class="fa fa-angle-left"></i>Back</a></li>
+                                        <li><a href="#">1</a></li>
+                                        <li class="active"><a href="#">2</a></li>
+                                        <li><a href="#">3</a></li>
+                                        <li> - - - - - </li>
+                                        <li><a href="#">18</a></li>
+                                        <li><a href="#">18</a></li>
+                                        <li><a href="#">20</a></li>
+                                        <li><a href="#">Next<i class="fa fa-angle-right"></i></a></li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                            <!-- Pagination end -->
+                        </div>
+                        <!-- Manage account end -->
+                    </div>
+                </div>
+            </div>
+            <!-- chuyển giữa các Menu bar -->
+            <script src="~/Assets/js/profile.js"></script>
+        </div>
+    </div>
+</div>
+<!-- Register Section End -->

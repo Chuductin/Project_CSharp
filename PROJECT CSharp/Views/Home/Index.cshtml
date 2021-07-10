@@ -1,0 +1,1114 @@
+﻿
+@{
+    ViewBag.Title = "Home";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<!-- Hero Section Start -->
+<div class="hero-section section mb-30">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+
+                <!-- Hero Slider Start -->
+                <div class="hero-slider hero-slider-one">
+
+                    <!-- Hero Item Start -->
+                    <div class="hero-item">
+                        <div class="row align-items-center justify-content-between">
+
+                            <!-- Hero Content -->
+                            <div class="hero-content col">
+
+                                <h2>Nhanh tay!!!!</h2>
+                                <h1><span>Bò sốt vang</span></h1>
+                                <h1>Giảm <span class="big">20%</span></h1>
+                                <a href="#">Order ngay</a>
+
+                            </div>
+
+                            <!-- Hero Image -->
+                            <div class="hero-image col">
+                                <img src="~/Assets/images/hero/hero-03.png" alt="Hero Image">
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- Hero Item End -->
+                    <!-- Hero Item Start -->
+                    <div class="hero-item">
+                        <div class="row align-items-center justify-content-between">
+
+                            <!-- Hero Content -->
+                            <div class="hero-content col">
+
+                                <h2>Combo 3 người</h2>
+                                <h1><span>Hot Hot</span></h1>
+                                <h1>Chỉ <span class="big">200k</span></h1>
+                                <a href="#">Order ngay</a>
+
+                            </div>
+
+                            <!-- Hero Image -->
+                            <div class="hero-image col">
+                                <img src="~/Assets/images/hero/hero-02.png" alt="Hero Image">
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- Hero Item End -->
+                    <!-- Hero Item Start -->
+                    <div class="hero-item">
+                        <div class="row align-items-center justify-content-between">
+
+                            <!-- Hero Content -->
+                            <div class="hero-content col">
+
+                                <h2>Bữa trưa ngon</h2>
+                                <h1><span>2 người</span></h1>
+                                <h1>Chỉ với <span class="big">60k</span></h1>
+                                <a href="#">Order ngay</a>
+
+                            </div>
+
+                            <!-- Hero Image -->
+                            <div class="hero-image col">
+                                <img src="~/Assets/images/hero/hero-01.png" alt="Hero Image">
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- Hero Item End -->
+
+                </div>
+                <!-- Hero Slider End -->
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Hero Section End -->
+<!-- Banner Section Start -->
+<div class="banner-section section mb-60">
+    <div class="container">
+        <div class="row row-10">
+
+            <!-- Banner -->
+            <div class="col-md-8 col-12 mb-30">
+                <div class="banner">
+                    <a href="#"><img src="~/Assets/images/banner/banner-01.png" alt="Banner"></a>
+                </div>
+            </div>
+
+            <!-- Banner -->
+            <div class="col-md-4 col-12 mb-30">
+                <div class="banner">
+                    <a href="#"><img src="~/Assets/images/banner/banner-02.png" alt="Banner"></a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- Banner Section End -->
+<!-- Feature Product Section Start -->
+<div class="product-section section mb-70">
+    <div class="container">
+        <div class="row">
+
+            <!-- Section Title Start -->
+            <div class="col-12 mb-40">
+                <div class="section-title-one" data-title="MỤC NỔI BẬT">
+                    <h1>MỤC NỔI BẬT</h1>
+                </div>
+            </div>
+            <!-- Section Title End -->
+            <!-- Product Tab Filter Start -->
+            <div class="col-12 mb-30">
+                <div class="product-tab-filter">
+
+                    <!-- Tab Filter Toggle -->
+                    <button class="product-tab-filter-toggle">showing: <span></span><i class="icofont icofont-simple-down"></i></button>
+
+                    <!-- Product Tab List -->
+                    <ul class="nav product-tab-list">
+                        <li><a class="active" data-toggle="tab" href="#tab-one">MÓN MỚI</a></li>
+                        <li><a data-toggle="tab" href="#tab-two">BÁN CHẠY</a></li>
+                    </ul>
+
+                </div>
+            </div>
+            <!-- Product Tab Filter End -->
+            <!-- Product Tab Content Start -->
+            <div class="col-12">
+                <div class="tab-content">
+
+                    <!-- Tab Pane Start -->
+                    <div class="tab-pane fade show active" id="tab-one">
+
+                        <!-- Product Slider Wrap Start -->
+                        <div class="product-slider-wrap product-slider-arrow-one">
+                            <!-- Product Slider Start -->
+                            <div class="product-slider product-slider-4">
+
+                                <div class="col pb-20 pt-10">
+                                    <!-- Product Start -->
+                                    <div class="ee-product">
+
+                                        <!-- Image -->
+                                        <div class="image">
+
+                                            <a href="SingleProduct" class="img"><img src="~/Assets/images/product/product-1.png" alt="Product Image"></a>
+                                            <a style="background-color: #f5d730;
+                                                               padding: 10px;
+                                                               border-radius: 25px;
+                                                               margin-left: 60px;
+                                                               margin-top: 10px;">
+                                                <i class="ti-shopping-cart"></i>
+                                                <input style="background: none; border: none;font-weight: bold;" type="submit" onclick="buy('${o.id}')" value="THÊM VÀO GIỎ" />
+                                            </a>
+                                        </div>
+
+                                        <!-- Content -->
+                                        <div class="content">
+
+                                            <!-- Category & Title -->
+                                            <div class="category-title">
+
+                                                <a href="#" class="cat">Laptop</a>
+                                                <h5 class="title"><a href="SingleProduct">Zeon Zen 4 Pro</a></h5>
+
+                                            </div>
+
+                                            <!-- Price & Ratting -->
+                                            <div class="price-ratting">
+
+                                                <h5 class="price">$295.00</h5>
+                                                <div class="ratting">
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star-half-o"></i>
+                                                    <i class="fa fa-star-o"></i>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <!-- Product End -->
+                                </div>
+
+                                <div class="col pb-20 pt-10">
+                                    <!-- Product Start -->
+                                    <div class="ee-product">
+
+                                        <!-- Image -->
+                                        <div class="image">
+
+                                            <a href="SingleProduct" class="img"><img src="~/Assets/images/product/product-1.png" alt="Product Image"></a>
+                                            <a style="background-color: #f5d730;
+                                                               padding: 10px;
+                                                               border-radius: 25px;
+                                                               margin-left: 60px;
+                                                               margin-top: 10px;">
+                                                <i class="ti-shopping-cart"></i>
+                                                <input style="background: none; border: none;font-weight: bold;" type="submit" onclick="buy('${o.id}')" value="THÊM VÀO GIỎ" />
+                                            </a>
+                                        </div>
+
+                                        <!-- Content -->
+                                        <div class="content">
+
+                                            <!-- Category & Title -->
+                                            <div class="category-title">
+
+                                                <a href="#" class="cat">Laptop</a>
+                                                <h5 class="title"><a href="SingleProduct">Zeon Zen 4 Pro</a></h5>
+
+                                            </div>
+
+                                            <!-- Price & Ratting -->
+                                            <div class="price-ratting">
+
+                                                <h5 class="price">$295.00</h5>
+                                                <div class="ratting">
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star-half-o"></i>
+                                                    <i class="fa fa-star-o"></i>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <!-- Product End -->
+                                </div>
+
+                                <div class="col pb-20 pt-10">
+                                    <!-- Product Start -->
+                                    <div class="ee-product">
+
+                                        <!-- Image -->
+                                        <div class="image">
+
+                                            <a href="SingleProduct" class="img"><img src="~/Assets/images/product/product-1.png" alt="Product Image"></a>
+                                            <a style="background-color: #f5d730;
+                                                               padding: 10px;
+                                                               border-radius: 25px;
+                                                               margin-left: 60px;
+                                                               margin-top: 10px;">
+                                                <i class="ti-shopping-cart"></i>
+                                                <input style="background: none; border: none;font-weight: bold;" type="submit" onclick="buy('${o.id}')" value="THÊM VÀO GIỎ" />
+                                            </a>
+                                        </div>
+
+                                        <!-- Content -->
+                                        <div class="content">
+
+                                            <!-- Category & Title -->
+                                            <div class="category-title">
+
+                                                <a href="#" class="cat">Laptop</a>
+                                                <h5 class="title"><a href="SingleProduct">Zeon Zen 4 Pro</a></h5>
+
+                                            </div>
+
+                                            <!-- Price & Ratting -->
+                                            <div class="price-ratting">
+
+                                                <h5 class="price">$295.00</h5>
+                                                <div class="ratting">
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star-half-o"></i>
+                                                    <i class="fa fa-star-o"></i>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <!-- Product End -->
+                                </div>
+
+                                <div class="col pb-20 pt-10">
+                                    <!-- Product Start -->
+                                    <div class="ee-product">
+
+                                        <!-- Image -->
+                                        <div class="image">
+
+                                            <a href="SingleProduct" class="img"><img src="~/Assets/images/product/product-1.png" alt="Product Image"></a>
+                                            <a style="background-color: #f5d730;
+                                                               padding: 10px;
+                                                               border-radius: 25px;
+                                                               margin-left: 60px;
+                                                               margin-top: 10px;">
+                                                <i class="ti-shopping-cart"></i>
+                                                <input style="background: none; border: none;font-weight: bold;" type="submit" onclick="buy('${o.id}')" value="THÊM VÀO GIỎ" />
+                                            </a>
+                                        </div>
+
+                                        <!-- Content -->
+                                        <div class="content">
+
+                                            <!-- Category & Title -->
+                                            <div class="category-title">
+
+                                                <a href="#" class="cat">Laptop</a>
+                                                <h5 class="title"><a href="SingleProduct">Zeon Zen 4 Pro</a></h5>
+
+                                            </div>
+
+                                            <!-- Price & Ratting -->
+                                            <div class="price-ratting">
+
+                                                <h5 class="price">$295.00</h5>
+                                                <div class="ratting">
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star-half-o"></i>
+                                                    <i class="fa fa-star-o"></i>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <!-- Product End -->
+                                </div>
+
+                                <div class="col pb-20 pt-10">
+                                    <!-- Product Start -->
+                                    <div class="ee-product">
+
+                                        <!-- Image -->
+                                        <div class="image">
+
+                                            <a href="SingleProduct" class="img"><img src="~/Assets/images/product/product-1.png" alt="Product Image"></a>
+                                            <a style="background-color: #f5d730;
+                                                               padding: 10px;
+                                                               border-radius: 25px;
+                                                               margin-left: 60px;
+                                                               margin-top: 10px;">
+                                                <i class="ti-shopping-cart"></i>
+                                                <input style="background: none; border: none;font-weight: bold;" type="submit" onclick="buy('${o.id}')" value="THÊM VÀO GIỎ" />
+                                            </a>
+                                        </div>
+
+                                        <!-- Content -->
+                                        <div class="content">
+
+                                            <!-- Category & Title -->
+                                            <div class="category-title">
+
+                                                <a href="#" class="cat">Laptop</a>
+                                                <h5 class="title"><a href="SingleProduct">Zeon Zen 4 Pro</a></h5>
+
+                                            </div>
+
+                                            <!-- Price & Ratting -->
+                                            <div class="price-ratting">
+
+                                                <h5 class="price">$295.00</h5>
+                                                <div class="ratting">
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star-half-o"></i>
+                                                    <i class="fa fa-star-o"></i>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <!-- Product End -->
+                                </div>
+
+                            </div>
+                            <!-- Product Slider End -->
+                        </div>
+                        <!-- Product Slider Wrap End -->
+
+                    </div>
+                    <!-- Tab Pane End -->
+                    <!-- Tab Pane Start -->
+                    <div class="tab-pane fade" id="tab-two">
+
+                        <!-- Product Slider Wrap Start -->
+                        <div class="product-slider-wrap product-slider-arrow-one">
+                            <!-- Product Slider Start -->
+                            <div class="product-slider product-slider-4">
+
+                                <div class="col pb-20 pt-10">
+                                    <!-- Product Start -->
+                                    <div class="ee-product">
+
+                                        <!-- Image -->
+                                        <div class="image">
+
+                                            <a href="SingleProduct" class="img"><img src="~/Assets/images/product/product-1.png" alt="Product Image"></a>
+                                            <a style="background-color: #f5d730;
+                                                               padding: 10px;
+                                                               border-radius: 25px;
+                                                               margin-left: 60px;
+                                                               margin-top: 10px;">
+                                                <i class="ti-shopping-cart"></i>
+                                                <input style="background: none; border: none;font-weight: bold;" type="submit" onclick="buy('${o.id}')" value="THÊM VÀO GIỎ" />
+                                            </a>
+                                        </div>
+
+                                        <!-- Content -->
+                                        <div class="content">
+
+                                            <!-- Category & Title -->
+                                            <div class="category-title">
+
+                                                <a href="#" class="cat">Laptop</a>
+                                                <h5 class="title"><a href="SingleProduct">Zeon Zen 4 Pro</a></h5>
+
+                                            </div>
+
+                                            <!-- Price & Ratting -->
+                                            <div class="price-ratting">
+
+                                                <h5 class="price">$295.00</h5>
+                                                <div class="ratting">
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star-half-o"></i>
+                                                    <i class="fa fa-star-o"></i>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <!-- Product End -->
+                                </div>
+
+                                <div class="col pb-20 pt-10">
+                                    <!-- Product Start -->
+                                    <div class="ee-product">
+
+                                        <!-- Image -->
+                                        <div class="image">
+
+                                            <a href="SingleProduct" class="img"><img src="~/Assets/images/product/product-1.png" alt="Product Image"></a>
+                                            <a style="background-color: #f5d730;
+                                                               padding: 10px;
+                                                               border-radius: 25px;
+                                                               margin-left: 60px;
+                                                               margin-top: 10px;">
+                                                <i class="ti-shopping-cart"></i>
+                                                <input style="background: none; border: none;font-weight: bold;" type="submit" onclick="buy('${o.id}')" value="THÊM VÀO GIỎ" />
+                                            </a>
+                                        </div>
+
+                                        <!-- Content -->
+                                        <div class="content">
+
+                                            <!-- Category & Title -->
+                                            <div class="category-title">
+
+                                                <a href="#" class="cat">Laptop</a>
+                                                <h5 class="title"><a href="SingleProduct">Zeon Zen 4 Pro</a></h5>
+
+                                            </div>
+
+                                            <!-- Price & Ratting -->
+                                            <div class="price-ratting">
+
+                                                <h5 class="price">$295.00</h5>
+                                                <div class="ratting">
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star-half-o"></i>
+                                                    <i class="fa fa-star-o"></i>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <!-- Product End -->
+                                </div>
+
+                                <div class="col pb-20 pt-10">
+                                    <!-- Product Start -->
+                                    <div class="ee-product">
+
+                                        <!-- Image -->
+                                        <div class="image">
+
+                                            <a href="SingleProduct" class="img"><img src="~/Assets/images/product/product-1.png" alt="Product Image"></a>
+                                            <a style="background-color: #f5d730;
+                                                               padding: 10px;
+                                                               border-radius: 25px;
+                                                               margin-left: 60px;
+                                                               margin-top: 10px;">
+                                                <i class="ti-shopping-cart"></i>
+                                                <input style="background: none; border: none;font-weight: bold;" type="submit" onclick="buy('${o.id}')" value="THÊM VÀO GIỎ" />
+                                            </a>
+                                        </div>
+
+                                        <!-- Content -->
+                                        <div class="content">
+
+                                            <!-- Category & Title -->
+                                            <div class="category-title">
+
+                                                <a href="#" class="cat">Laptop</a>
+                                                <h5 class="title"><a href="SingleProduct">Zeon Zen 4 Pro</a></h5>
+
+                                            </div>
+
+                                            <!-- Price & Ratting -->
+                                            <div class="price-ratting">
+
+                                                <h5 class="price">$295.00</h5>
+                                                <div class="ratting">
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star-half-o"></i>
+                                                    <i class="fa fa-star-o"></i>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <!-- Product End -->
+                                </div>
+
+                                <div class="col pb-20 pt-10">
+                                    <!-- Product Start -->
+                                    <div class="ee-product">
+
+                                        <!-- Image -->
+                                        <div class="image">
+
+                                            <a href="SingleProduct" class="img"><img src="~/Assets/images/product/product-1.png" alt="Product Image"></a>
+                                            <a style="background-color: #f5d730;
+                                                               padding: 10px;
+                                                               border-radius: 25px;
+                                                               margin-left: 60px;
+                                                               margin-top: 10px;">
+                                                <i class="ti-shopping-cart"></i>
+                                                <input style="background: none; border: none;font-weight: bold;" type="submit" onclick="buy('${o.id}')" value="THÊM VÀO GIỎ" />
+                                            </a>
+                                        </div>
+
+                                        <!-- Content -->
+                                        <div class="content">
+
+                                            <!-- Category & Title -->
+                                            <div class="category-title">
+
+                                                <a href="#" class="cat">Laptop</a>
+                                                <h5 class="title"><a href="SingleProduct">Zeon Zen 4 Pro</a></h5>
+
+                                            </div>
+
+                                            <!-- Price & Ratting -->
+                                            <div class="price-ratting">
+
+                                                <h5 class="price">$295.00</h5>
+                                                <div class="ratting">
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star-half-o"></i>
+                                                    <i class="fa fa-star-o"></i>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <!-- Product End -->
+                                </div>
+
+                                <div class="col pb-20 pt-10">
+                                    <!-- Product Start -->
+                                    <div class="ee-product">
+
+                                        <!-- Image -->
+                                        <div class="image">
+
+                                            <a href="SingleProduct" class="img"><img src="~/Assets/images/product/product-1.png" alt="Product Image"></a>
+                                            <a style="background-color: #f5d730;
+                                                               padding: 10px;
+                                                               border-radius: 25px;
+                                                               margin-left: 60px;
+                                                               margin-top: 10px;">
+                                                <i class="ti-shopping-cart"></i>
+                                                <input style="background: none; border: none;font-weight: bold;" type="submit" onclick="buy('${o.id}')" value="THÊM VÀO GIỎ" />
+                                            </a>
+                                        </div>
+
+                                        <!-- Content -->
+                                        <div class="content">
+
+                                            <!-- Category & Title -->
+                                            <div class="category-title">
+
+                                                <a href="#" class="cat">Laptop</a>
+                                                <h5 class="title"><a href="SingleProduct">Zeon Zen 4 Pro</a></h5>
+
+                                            </div>
+
+                                            <!-- Price & Ratting -->
+                                            <div class="price-ratting">
+
+                                                <h5 class="price">$295.00</h5>
+                                                <div class="ratting">
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star-half-o"></i>
+                                                    <i class="fa fa-star-o"></i>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <!-- Product End -->
+                                </div>
+
+                            </div>
+                            <!-- Product Slider End -->
+                        </div>
+                        <!-- Product Slider Wrap End -->
+
+                    </div>
+                    <!-- Tab Pane End -->
+
+                </div>
+            </div>
+            <!-- Product Tab Content End -->
+
+        </div>
+    </div>
+</div>
+<!-- Feature Product Section End -->
+<!-- Product Section Start -->
+<div class="product-section section mb-60">
+    <div class="container">
+        <div class="row">
+
+            <!-- Section Title Start -->
+            <div class="col-12 mb-40">
+                <div class="section-title-one" data-title="ĐỒ ĂN & ĐỒ UỐNG">
+                    <h1>ĐỒ ĂN & ĐỒ UỐNG</h1>
+                </div>
+            </div>
+            <!-- Section Title End -->
+
+            <div class="col-12">
+                <div class="row">
+
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-12 pb-30 pt-10">
+                        <!-- Product Start -->
+                        <div class="ee-product">
+
+                            <!-- Image -->
+                            <div class="image">
+
+                                <a href="SingleProduct" class="img"><img src="~/Assets/images/product/product-5.png" alt="Product Image"></a>
+
+                                <a style="background-color: #f5d730;
+                                                               padding: 10px;
+                                                               border-radius: 25px;
+                                                               margin-left: 60px;
+                                                               margin-top: 10px;">
+                                    <i class="ti-shopping-cart"></i>
+                                    <input style="background: none; border: none;font-weight: bold;" type="submit" onclick="buy('${o.id}')" value="THÊM VÀO GIỎ" />
+                                </a>
+
+                            </div>
+
+                            <!-- Content -->
+                            <div class="content">
+
+                                <!-- Category & Title -->
+                                <div class="category-title">
+
+                                    <a href="#" class="cat">Camera</a>
+                                    <h5 class="title"><a href="SingleProduct">Mony Handycam Z 105</a></h5>
+
+                                </div>
+
+                                <!-- Price & Ratting -->
+                                <div class="price-ratting">
+
+                                    <h5 class="price">$110.00</h5>
+                                    <div class="ratting">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star-half-o"></i>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <!-- Product End -->
+                    </div>
+
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-12 pb-30 pt-10">
+                        <!-- Product Start -->
+                        <div class="ee-product">
+
+                            <!-- Image -->
+                            <div class="image">
+
+                                <span class="label sale">sale</span>
+
+                                <a href="SingleProduct" class="img"><img src="~/Assets/images/product/product-6.png" alt="Product Image"></a>
+
+                                <a style="background-color: #f5d730;
+                                                               padding: 10px;
+                                                               border-radius: 25px;
+                                                               margin-left: 60px;
+                                                               margin-top: 10px;">
+                                    <i class="ti-shopping-cart"></i>
+                                    <inputstyle ="background: none; border: none;font-weight: bold;" type="submit" onclick="buy('${o.id}')" value="THÊM VÀO GIỎ" />
+                                </a>
+
+                            </div>
+
+                            <!-- Content -->
+                            <div class="content">
+
+                                <!-- Category & Title -->
+                                <div class="category-title">
+
+                                    <a href="#" class="cat">Camera</a>
+                                    <h5 class="title"><a href="SingleProduct">Axor Digital camera</a></h5>
+
+                                </div>
+
+                                <!-- Price & Ratting -->
+                                <div class="price-ratting">
+
+                                    <h5 class="price"><span class="old">$265</span>$199.00</h5>
+                                    <div class="ratting">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <!-- Product End -->
+                    </div>
+
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-12 pb-30 pt-10">
+                        <!-- Product Start -->
+                        <div class="ee-product">
+
+                            <!-- Image -->
+                            <div class="image">
+
+                                <a href="SingleProduct" class="img"><img src="~/Assets/images/product/product-7.png" alt="Product Image"></a>
+
+                                <a style="background-color: #f5d730;
+                                                               padding: 10px;
+                                                               border-radius: 25px;
+                                                               margin-left: 60px;
+                                                               margin-top: 10px;">
+                                    <i class="ti-shopping-cart"></i>
+                                    <input style="background: none; border: none;font-weight: bold;" type="submit" onclick="buy('${o.id}')" value="THÊM VÀO GIỎ" />
+                                </a>
+
+                            </div>
+
+                            <!-- Content -->
+                            <div class="content">
+
+                                <!-- Category & Title -->
+                                <div class="category-title">
+
+                                    <a href="#" class="cat">Camera</a>
+                                    <h5 class="title"><a href="SingleProduct">Silvex DSLR Camera T 32</a></h5>
+
+                                </div>
+
+                                <!-- Price & Ratting -->
+                                <div class="price-ratting">
+
+                                    <h5 class="price">$580.00</h5>
+                                    <div class="ratting">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star-half-o"></i>
+                                        <i class="fa fa-star-o"></i>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <!-- Product End -->
+                    </div>
+
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-12 pb-30 pt-10">
+                        <!-- Product Start -->
+                        <div class="ee-product">
+
+                            <!-- Image -->
+                            <div class="image">
+
+                                <span class="label new">new</span>
+
+                                <a href="SingleProduct" class="img"><img src="~/Assets/images/product/product-8.png" alt="Product Image"></a>
+
+                                <a style="background-color: #f5d730;
+                                                               padding: 10px;
+                                                               border-radius: 25px;
+                                                               margin-left: 60px;
+                                                               margin-top: 10px;">
+                                    <i class="ti-shopping-cart"></i>
+                                    <input style="background: none; border: none;font-weight: bold;" type="submit" onclick="buy('${o.id}')" value="THÊM VÀO GIỎ" />
+                                </a>
+
+                            </div>
+
+                            <!-- Content -->
+                            <div class="content">
+
+                                <!-- Category & Title -->
+                                <div class="category-title">
+
+                                    <a href="#" class="cat">Camera</a>
+                                    <h5 class="title"><a href="SingleProduct">Necta Instant Camera</a></h5>
+
+                                </div>
+
+                                <!-- Price & Ratting -->
+                                <div class="price-ratting">
+
+                                    <h5 class="price">$320.00</h5>
+                                    <div class="ratting">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star-half-o"></i>
+                                        <i class="fa fa-star-o"></i>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <!-- Product End -->
+                    </div>
+
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-12 pb-30 pt-10">
+                        <!-- Product Start -->
+                        <div class="ee-product">
+
+                            <!-- Image -->
+                            <div class="image">
+
+                                <span class="label sale">sale</span>
+
+                                <a href="SingleProduct" class="img"><img src="~/Assets/images/product/product-9.png" alt="Product Image"></a>
+
+                                <a style="background-color: #f5d730;
+                                        padding: 10px;
+                                        border-radius: 25px;
+                                        margin-left: 60px;
+                                        margin-top: 10px;">
+                                    <i class="ti-shopping-cart"></i>
+                                    <input style="background: none; border: none;font-weight: bold;" type="submit" onclick="buy('${o.id}')" value="THÊM VÀO GIỎ" />
+                                </a>
+
+                            </div>
+
+                            <!-- Content -->
+                            <div class="content">
+
+                                <!-- Category & Title -->
+                                <div class="category-title">
+
+                                    <a href="#" class="cat">Watch</a>
+                                    <h5 class="title"><a href="SingleProduct">Mascut Smart Watch</a></h5>
+
+                                </div>
+
+                                <!-- Price & Ratting -->
+                                <div class="price-ratting">
+
+                                    <h5 class="price"><span class="old">$365</span>$295.00</h5>
+                                    <div class="ratting">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <!-- Product End -->
+                    </div>
+
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-12 pb-30 pt-10">
+                        <!-- Product Start -->
+                        <div class="ee-product">
+
+                            <!-- Image -->
+                            <div class="image">
+
+                                <a href="SingleProduct" class="img"><img src="~/Assets/images/product/product-10.png" alt="Product Image"></a>
+
+                                <a style="background-color: #f5d730;
+                                                               padding: 10px;
+                                                               border-radius: 25px;
+                                                               margin-left: 60px;
+                                                               margin-top: 10px;">
+                                    <i class="ti-shopping-cart"></i>
+                                    <input style="background: none; border: none;font-weight: bold;" type="submit" onclick="buy('${o.id}')" value="THÊM VÀO GIỎ" />
+                                </a>
+
+                            </div>
+
+                            <!-- Content -->
+                            <div class="content">
+
+                                <!-- Category & Title -->
+                                <div class="category-title">
+
+                                    <a href="#" class="cat">Watch</a>
+                                    <h5 class="title"><a href="SingleProduct">Z Bluetooth Headphone</a></h5>
+
+                                </div>
+
+                                <!-- Price & Ratting -->
+                                <div class="price-ratting">
+
+                                    <h5 class="price">$189.00</h5>
+                                    <div class="ratting">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star-half-o"></i>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <!-- Product End -->
+                    </div>
+
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-12 pb-30 pt-10">
+                        <!-- Product Start -->
+                        <div class="ee-product">
+
+                            <!-- Image -->
+                            <div class="image">
+
+                                <span class="label new">new</span>
+
+                                <a href="SingleProduct" class="img"><img src="~/Assets/images/product/product-11.png" alt="Product Image"></a>
+
+                                <a style="background-color: #f5d730;
+                                                               padding: 10px;
+                                                               border-radius: 25px;
+                                                               margin-left: 60px;
+                                                               margin-top: 10px;">
+                                    <i class="ti-shopping-cart"></i>
+                                    <input style="background: none; border: none;font-weight: bold;" type="submit" onclick="buy('${o.id}')" value="THÊM VÀO GIỎ" />
+                                </a>
+
+                            </div>
+
+                            <!-- Content -->
+                            <div class="content">
+
+                                <!-- Category & Title -->
+                                <div class="category-title">
+
+                                    <a href="#" class="cat">Printer</a>
+                                    <h5 class="title"><a href="SingleProduct">Pranon Photo Printer Y 25</a></h5>
+
+                                </div>
+
+                                <!-- Price & Ratting -->
+                                <div class="price-ratting">
+
+                                    <h5 class="price">$210.00</h5>
+                                    <div class="ratting">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star-o"></i>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <!-- Product End -->
+                    </div>
+
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-12 pb-30 pt-10">
+                        <!-- Product Start -->
+                        <div class="ee-product">
+
+                            <!-- Image -->
+                            <div class="image">
+
+                                <a href="SingleProduct" class="img"><img src="~/Assets/images/product/product-12.png" alt="Product Image"></a>
+
+                                <a style="background-color: #f5d730;
+                                                               padding: 10px;
+                                                               border-radius: 25px;
+                                                               margin-left: 60px;
+                                                               margin-top: 10px;">
+                                    <i class="ti-shopping-cart"></i>
+                                    <input style="background: none; border: none;font-weight: bold;" type="submit" onclick="buy('${o.id}')" value="THÊM VÀO GIỎ" />
+                                </a>
+
+                            </div>
+
+                            <!-- Content -->
+                            <div class="content">
+
+                                <!-- Category & Title -->
+                                <div class="category-title">
+
+                                    <a href="#" class="cat">Audio</a>
+                                    <h5 class="title"><a href="SingleProduct">Roses Speaker Box</a></h5>
+
+                                </div>
+
+                                <!-- Price & Ratting -->
+                                <div class="price-ratting">
+
+                                    <h5 class="price">$210.00</h5>
+                                    <div class="ratting">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star-o"></i>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <!-- Product End -->
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- Product Section End -->

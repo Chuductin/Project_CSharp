@@ -1,0 +1,55 @@
+D:\Kỳ V\PROJECT C#\PROJECT CSharp\PROJECT CSharp\bin\PROJECT CSharp.dll.config
+D:\Kỳ V\PROJECT C#\PROJECT CSharp\PROJECT CSharp\bin\PROJECT CSharp.dll
+D:\Kỳ V\PROJECT C#\PROJECT CSharp\PROJECT CSharp\bin\PROJECT CSharp.pdb
+D:\Kỳ V\PROJECT C#\PROJECT CSharp\PROJECT CSharp\bin\roslyn\csc.exe
+D:\Kỳ V\PROJECT C#\PROJECT CSharp\PROJECT CSharp\bin\roslyn\csc.exe.config
+D:\Kỳ V\PROJECT C#\PROJECT CSharp\PROJECT CSharp\bin\roslyn\csc.rsp
+D:\Kỳ V\PROJECT C#\PROJECT CSharp\PROJECT CSharp\bin\roslyn\csi.exe
+D:\Kỳ V\PROJECT C#\PROJECT CSharp\PROJECT CSharp\bin\roslyn\csi.rsp
+D:\Kỳ V\PROJECT C#\PROJECT CSharp\PROJECT CSharp\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Kỳ V\PROJECT C#\PROJECT CSharp\PROJECT CSharp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Kỳ V\PROJECT C#\PROJECT CSharp\PROJECT CSharp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Kỳ V\PROJECT C#\PROJECT CSharp\PROJECT CSharp\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Kỳ V\PROJECT C#\PROJECT CSharp\PROJECT CSharp\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Kỳ V\PROJECT C#\PROJECT CSharp\PROJECT CSharp\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Kỳ V\PROJECT C#\PROJECT CSharp\PROJECT CSharp\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Kỳ V\PROJECT C#\PROJECT CSharp\PROJECT CSharp\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Kỳ V\PROJECT C#\PROJECT CSharp\PROJECT CSharp\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Kỳ V\PROJECT C#\PROJECT CSharp\PROJECT CSharp\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Kỳ V\PROJECT C#\PROJECT CSharp\PROJECT CSharp\bin\roslyn\System.AppContext.dll
+D:\Kỳ V\PROJECT C#\PROJECT CSharp\PROJECT CSharp\bin\roslyn\System.Collections.Immutable.dll
+D:\Kỳ V\PROJECT C#\PROJECT CSharp\PROJECT CSharp\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Kỳ V\PROJECT C#\PROJECT CSharp\PROJECT CSharp\bin\roslyn\System.IO.FileSystem.dll
+D:\Kỳ V\PROJECT C#\PROJECT CSharp\PROJECT CSharp\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Kỳ V\PROJECT C#\PROJECT CSharp\PROJECT CSharp\bin\roslyn\System.Reflection.Metadata.dll
+D:\Kỳ V\PROJECT C#\PROJECT CSharp\PROJECT CSharp\bin\roslyn\vbc.exe
+D:\Kỳ V\PROJECT C#\PROJECT CSharp\PROJECT CSharp\bin\roslyn\vbc.exe.config
+D:\Kỳ V\PROJECT C#\PROJECT CSharp\PROJECT CSharp\bin\roslyn\vbc.rsp
+D:\Kỳ V\PROJECT C#\PROJECT CSharp\PROJECT CSharp\bin\roslyn\VBCSCompiler.exe
+D:\Kỳ V\PROJECT C#\PROJECT CSharp\PROJECT CSharp\bin\roslyn\VBCSCompiler.exe.config
+D:\Kỳ V\PROJECT C#\PROJECT CSharp\PROJECT CSharp\bin\Antlr3.Runtime.dll
+D:\Kỳ V\PROJECT C#\PROJECT CSharp\PROJECT CSharp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Kỳ V\PROJECT C#\PROJECT CSharp\PROJECT CSharp\bin\Microsoft.Web.Infrastructure.dll
+D:\Kỳ V\PROJECT C#\PROJECT CSharp\PROJECT CSharp\bin\Newtonsoft.Json.dll
+D:\Kỳ V\PROJECT C#\PROJECT CSharp\PROJECT CSharp\bin\System.Web.Helpers.dll
+D:\Kỳ V\PROJECT C#\PROJECT CSharp\PROJECT CSharp\bin\System.Web.Mvc.dll
+D:\Kỳ V\PROJECT C#\PROJECT CSharp\PROJECT CSharp\bin\System.Web.Optimization.dll
+D:\Kỳ V\PROJECT C#\PROJECT CSharp\PROJECT CSharp\bin\System.Web.Razor.dll
+D:\Kỳ V\PROJECT C#\PROJECT CSharp\PROJECT CSharp\bin\System.Web.WebPages.Deployment.dll
+D:\Kỳ V\PROJECT C#\PROJECT CSharp\PROJECT CSharp\bin\System.Web.WebPages.dll
+D:\Kỳ V\PROJECT C#\PROJECT CSharp\PROJECT CSharp\bin\System.Web.WebPages.Razor.dll
+D:\Kỳ V\PROJECT C#\PROJECT CSharp\PROJECT CSharp\bin\WebGrease.dll
+D:\Kỳ V\PROJECT C#\PROJECT CSharp\PROJECT CSharp\bin\System.Web.Helpers.xml
+D:\Kỳ V\PROJECT C#\PROJECT CSharp\PROJECT CSharp\bin\System.Web.Mvc.xml
+D:\Kỳ V\PROJECT C#\PROJECT CSharp\PROJECT CSharp\bin\System.Web.Optimization.xml
+D:\Kỳ V\PROJECT C#\PROJECT CSharp\PROJECT CSharp\bin\System.Web.Razor.xml
+D:\Kỳ V\PROJECT C#\PROJECT CSharp\PROJECT CSharp\bin\System.Web.WebPages.xml
+D:\Kỳ V\PROJECT C#\PROJECT CSharp\PROJECT CSharp\bin\System.Web.WebPages.Deployment.xml
+D:\Kỳ V\PROJECT C#\PROJECT CSharp\PROJECT CSharp\bin\System.Web.WebPages.Razor.xml
+D:\Kỳ V\PROJECT C#\PROJECT CSharp\PROJECT CSharp\bin\Newtonsoft.Json.xml
+D:\Kỳ V\PROJECT C#\PROJECT CSharp\PROJECT CSharp\bin\Antlr3.Runtime.pdb
+D:\Kỳ V\PROJECT C#\PROJECT CSharp\PROJECT CSharp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Kỳ V\PROJECT C#\PROJECT CSharp\PROJECT CSharp\obj\Debug\PROJECT CSharp.csproj.CoreCompileInputs.cache
+D:\Kỳ V\PROJECT C#\PROJECT CSharp\PROJECT CSharp\obj\Debug\PROJECT CSharp.csproj.CopyComplete
+D:\Kỳ V\PROJECT C#\PROJECT CSharp\PROJECT CSharp\obj\Debug\PROJECT CSharp.dll
+D:\Kỳ V\PROJECT C#\PROJECT CSharp\PROJECT CSharp\obj\Debug\PROJECT CSharp.pdb
